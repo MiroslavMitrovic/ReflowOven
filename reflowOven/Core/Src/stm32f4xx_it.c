@@ -316,20 +316,24 @@ void TIM2_IRQHandler(void)
 	{
 		if(1==ReflowEnable)
 		{
+			//TODO need to perform modification of PID controller in order to get half power
 			//Error
-			pid_error =temperature  -(float32_t)ReflowCurve[ReflowIndex];
+			//pid_error =temperature  -(float32_t)ReflowCurve[ReflowIndex];
+			//Error for power limitation
+			pid_error =(float32_t)ReflowCurve[ReflowIndex]-temperature;
 			//Correction
 			PidCorr = arm_pid_f32(&PID, pid_error);
 			PidCorrLim=(uint32_t)PidCorr;
-			//Correction limits
-			if (PidCorrLim > 999)
+			//Correction limits bank1-set value
+			if (PidCorrLim > 750)
 			{
-				PIDBank1 = 999;
+				PIDBank1 = 750;
 			}
 			else
 			{
 
 			}
+			//Correction limits bank2-set value
 			if(PidCorrLim>450)
 			{
 				PIDBank2 =450;
@@ -356,7 +360,7 @@ void TIM2_IRQHandler(void)
 			{
 
 			}
-			if( (0<=PidCorrLim) && (999>=PidCorrLim)	)
+			if( (0<=PidCorrLim) && (750>=PidCorrLim)	)
 			{
 				PIDBank1 = PidCorrLim;
 			}
@@ -364,10 +368,12 @@ void TIM2_IRQHandler(void)
 			{
 
 			}
-
-			TIM3->CCR2=999-PIDBank1;
-			TIM3->CCR3=450-PIDBank2;
-
+			//P Control without power limitation
+			//TIM3->CCR2=999-PIDBank1;
+			//TIM3->CCR3=450-PIDBank2;
+			//P Control with power limitation
+			TIM3->CCR2=PIDBank1;
+			TIM3->CCR3=PIDBank2;
 
 
 			if(	(ReflowIndex >= (PhaseIndex[0]+10)	)	&&	(ReflowIndex < PhaseIndex[1])	 )
