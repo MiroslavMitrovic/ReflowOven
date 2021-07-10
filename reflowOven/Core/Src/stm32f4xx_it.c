@@ -334,9 +334,9 @@ void TIM2_IRQHandler(void)
 
 			}
 			//Correction limits bank2-set value
-			if(PidCorrLim>450)
+			if(PidCorrLim>750)
 			{
-				PIDBank2 =450;
+				PIDBank2 =750;
 			}
 			else
 			{
@@ -374,7 +374,14 @@ void TIM2_IRQHandler(void)
 			//P Control with power limitation
 			TIM3->CCR2=PIDBank1;
 			TIM3->CCR3=PIDBank2;
-
+			if((TIM3->CCR2>0) || (TIM3->CCR3>0))
+			{
+				HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin,GPIO_PIN_SET);
+			}
+			else
+			{
+				HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin,GPIO_PIN_RESET);
+			}
 
 			if(	(ReflowIndex >= (PhaseIndex[0]+10)	)	&&	(ReflowIndex < PhaseIndex[1])	 )
 			{
@@ -422,6 +429,7 @@ void TIM2_IRQHandler(void)
 				HAL_NVIC_DisableIRQ(EXTI9_5_IRQn);
 				HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_2);
 				HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_3);
+				HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin,GPIO_PIN_RESET);
 				sprintf(ConsoleMSG,"COOL DOWN");
 				Flags.reflowComplete=TRUE;
 				State=Cooldown;

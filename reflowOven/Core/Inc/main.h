@@ -68,18 +68,22 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define PC14_OSC32_IN_Pin GPIO_PIN_14
-#define PC14_OSC32_IN_GPIO_Port GPIOC
-#define PC15_OSC32_OUT_Pin GPIO_PIN_15
-#define PC15_OSC32_OUT_GPIO_Port GPIOC
-#define PH0_OSC_IN_Pin GPIO_PIN_0
-#define PH0_OSC_IN_GPIO_Port GPIOH
-#define PH1_OSC_OUT_Pin GPIO_PIN_1
-#define PH1_OSC_OUT_GPIO_Port GPIOH
+#define PC14_OSC32_IN_CLOCK_OSC_Pin GPIO_PIN_14
+#define PC14_OSC32_IN_CLOCK_OSC_GPIO_Port GPIOC
+#define PC15_OSC32_OUT_OUT_CLOCK_OSC_Pin GPIO_PIN_15
+#define PC15_OSC32_OUT_OUT_CLOCK_OSC_GPIO_Port GPIOC
+#define PH0_OSC_IN_8MHz_Pin GPIO_PIN_0
+#define PH0_OSC_IN_8MHz_GPIO_Port GPIOH
+#define PH1_OSC_OUT_8MHz_Pin GPIO_PIN_1
+#define PH1_OSC_OUT_8MHz_GPIO_Port GPIOH
 #define OTG_FS_PowerSwitchOn_Pin GPIO_PIN_0
 #define OTG_FS_PowerSwitchOn_GPIO_Port GPIOC
 #define B1_Pin GPIO_PIN_0
 #define B1_GPIO_Port GPIOA
+#define ADC1_NC_Pin GPIO_PIN_1
+#define ADC1_NC_GPIO_Port GPIOA
+#define ADC2_NC_Pin GPIO_PIN_2
+#define ADC2_NC_GPIO_Port GPIOA
 #define SPI1_CS_Pin GPIO_PIN_4
 #define SPI1_CS_GPIO_Port GPIOA
 #define SPI1_SCK_Pin GPIO_PIN_5
@@ -88,6 +92,8 @@ void Error_Handler(void);
 #define SPI1_MISO_GPIO_Port GPIOA
 #define SPI1_MOSI_Pin GPIO_PIN_7
 #define SPI1_MOSI_GPIO_Port GPIOA
+#define BLPin_Pin GPIO_PIN_0
+#define BLPin_GPIO_Port GPIOB
 #define BOOT1_Pin GPIO_PIN_2
 #define BOOT1_GPIO_Port GPIOB
 #define EncoderPin1_Pin GPIO_PIN_9
@@ -127,12 +133,10 @@ void Error_Handler(void);
 #define OTG_FS_DM_GPIO_Port GPIOA
 #define OTG_FS_DP_Pin GPIO_PIN_12
 #define OTG_FS_DP_GPIO_Port GPIOA
-#define SWDIO_Pin GPIO_PIN_13
-#define SWDIO_GPIO_Port GPIOA
+#define SYS_JTMS_SWDIO_Pin GPIO_PIN_13
+#define SYS_JTMS_SWDIO_GPIO_Port GPIOA
 #define SWCLK_Pin GPIO_PIN_14
 #define SWCLK_GPIO_Port GPIOA
-#define Audio_RST_Pin GPIO_PIN_4
-#define Audio_RST_GPIO_Port GPIOD
 #define OTG_FS_OverCurrent_Pin GPIO_PIN_5
 #define OTG_FS_OverCurrent_GPIO_Port GPIOD
 #define BuzzerPin_Pin GPIO_PIN_5
