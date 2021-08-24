@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_bootloader_8c" xml:lang="en-US">
+<title>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c File Reference</title>
+<indexterm><primary>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_bootloader_8c_1a2fd598a0b153c1c690e643d57ccdb75d">bootloaderInit</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_bootloader_8c_1abcc7dd9140dbaa17b84ceb05f4602ae2">flashWord</link> (uint32_t dataToFlash)</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_bootloader_8c_1a282446bae4a0f8cae076bec6aff91c5d">readWord</link> (uint32_t address)</para>
+</listitem>
+            <listitem><para>void <link linkend="_bootloader_8c_1a8a448f03b8a6548c36ba945fb6bb0051">eraseMemory</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_bootloader_8c_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f">unlockFlashAndEraseMemory</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_bootloader_8c_1aa587315089e36ab2c285275711fc5671">lockFlash</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_bootloader_8c_1a6a1be0d0c17af6c868a8e98bed1e1fde">jumpToApp</link> (const uint32_t address)</para>
+</listitem>
+            <listitem><para>void <link linkend="_bootloader_8c_1abc0f16be0d136ae4392a954edb12cbe0">deinitEverything</link> ()</para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_bootloader_8c_1af49ad198511728cf511d199556ad668d">string_compare</link> (char array1[], char array2[], uint16_t length)</para>
+</listitem>
+            <listitem><para>void <link linkend="_bootloader_8c_1a253190cd1e1c1ca7068848f99fe79fe4">errorBlink</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_bootloader_8c_1a0954d34b192341b6b3102a7f283e864b">messageHandler</link> (uint8_t *Buf)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_bootloader_8c_1a2fd598a0b153c1c690e643d57ccdb75d"/>    <section>
+    <title>bootloaderInit()</title>
+<indexterm><primary>bootloaderInit</primary><secondary>bootloader.c</secondary></indexterm>
+<indexterm><primary>bootloader.c</primary><secondary>bootloaderInit</secondary></indexterm>
+<para><computeroutput>void bootloaderInit ( )</computeroutput></para>    </section><anchor xml:id="_bootloader_8c_1abc0f16be0d136ae4392a954edb12cbe0"/>    <section>
+    <title>deinitEverything()</title>
+<indexterm><primary>deinitEverything</primary><secondary>bootloader.c</secondary></indexterm>
+<indexterm><primary>bootloader.c</primary><secondary>deinitEverything</secondary></indexterm>
+<para><computeroutput>void deinitEverything ( )</computeroutput></para>    </section><anchor xml:id="_bootloader_8c_1a8a448f03b8a6548c36ba945fb6bb0051"/>    <section>
+    <title>eraseMemory()</title>
+<indexterm><primary>eraseMemory</primary><secondary>bootloader.c</secondary></indexterm>
+<indexterm><primary>bootloader.c</primary><secondary>eraseMemory</secondary></indexterm>
+<para><computeroutput>void eraseMemory ( )</computeroutput></para>    </section><anchor xml:id="_bootloader_8c_1a253190cd1e1c1ca7068848f99fe79fe4"/>    <section>
+    <title>errorBlink()</title>
+<indexterm><primary>errorBlink</primary><secondary>bootloader.c</secondary></indexterm>
+<indexterm><primary>bootloader.c</primary><secondary>errorBlink</secondary></indexterm>
+<para><computeroutput>void errorBlink ( )</computeroutput></para>    </section><anchor xml:id="_bootloader_8c_1abcc7dd9140dbaa17b84ceb05f4602ae2"/>    <section>
+    <title>flashWord()</title>
+<indexterm><primary>flashWord</primary><secondary>bootloader.c</secondary></indexterm>
+<indexterm><primary>bootloader.c</primary><secondary>flashWord</secondary></indexterm>
+<para><computeroutput>void flashWord (uint32_t dataToFlash)</computeroutput></para>    </section><anchor xml:id="_bootloader_8c_1a6a1be0d0c17af6c868a8e98bed1e1fde"/>    <section>
+    <title>jumpToApp()</title>
+<indexterm><primary>jumpToApp</primary><secondary>bootloader.c</secondary></indexterm>
+<indexterm><primary>bootloader.c</primary><secondary>jumpToApp</secondary></indexterm>
+<para><computeroutput>void jumpToApp (const uint32_t address)</computeroutput></para>    </section><anchor xml:id="_bootloader_8c_1aa587315089e36ab2c285275711fc5671"/>    <section>
+    <title>lockFlash()</title>
+<indexterm><primary>lockFlash</primary><secondary>bootloader.c</secondary></indexterm>
+<indexterm><primary>bootloader.c</primary><secondary>lockFlash</secondary></indexterm>
+<para><computeroutput>void lockFlash ( )</computeroutput></para>    </section><anchor xml:id="_bootloader_8c_1a0954d34b192341b6b3102a7f283e864b"/>    <section>
+    <title>messageHandler()</title>
+<indexterm><primary>messageHandler</primary><secondary>bootloader.c</secondary></indexterm>
+<indexterm><primary>bootloader.c</primary><secondary>messageHandler</secondary></indexterm>
+<para><computeroutput>void messageHandler (uint8_t * Buf)</computeroutput></para>    </section><anchor xml:id="_bootloader_8c_1a282446bae4a0f8cae076bec6aff91c5d"/>    <section>
+    <title>readWord()</title>
+<indexterm><primary>readWord</primary><secondary>bootloader.c</secondary></indexterm>
+<indexterm><primary>bootloader.c</primary><secondary>readWord</secondary></indexterm>
+<para><computeroutput>uint32_t readWord (uint32_t address)</computeroutput></para>    </section><anchor xml:id="_bootloader_8c_1af49ad198511728cf511d199556ad668d"/>    <section>
+    <title>string_compare()</title>
+<indexterm><primary>string_compare</primary><secondary>bootloader.c</secondary></indexterm>
+<indexterm><primary>bootloader.c</primary><secondary>string_compare</secondary></indexterm>
+<para><computeroutput>uint8_t string_compare (char array1[], char array2[], uint16_t length)</computeroutput></para>    </section><anchor xml:id="_bootloader_8c_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f"/>    <section>
+    <title>unlockFlashAndEraseMemory()</title>
+<indexterm><primary>unlockFlashAndEraseMemory</primary><secondary>bootloader.c</secondary></indexterm>
+<indexterm><primary>bootloader.c</primary><secondary>unlockFlashAndEraseMemory</secondary></indexterm>
+<para><computeroutput>void unlockFlashAndEraseMemory ( )</computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes refid="main_8h" local="yes">main.h</includes>
+    <includes local="yes">usb_device.h</includes>
+    <includes refid="bootloader_8h" local="yes">bootloader.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>usb_device.h</label>
+      </node>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>usbd_cdc_if.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c</label>
+        <link refid="main_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string.h</label>
+      </node>
+      <node id="5">
+        <label>bootloader.h</label>
+        <link refid="bootloader_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8c_1a70af21c671abfcc773614a9a4f63d920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SystemClock_Config</definition>
+        <argsstring>(void)</argsstring>
+        <name>SystemClock_Config</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>System Clock Configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>Configure the main internal regulator output voltage</para>
+<para>Initializes the RCC Oscillators according to the specified parameters in the RCC_OscInitTypeDef structure.</para>
+<para>Initializes the CPU, AHB and APB buses clocks</para>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c" line="107" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c" bodystart="107" bodyend="141" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c" declline="50" declcolumn="6"/>
+        <references refid="main_8c_1a1730ffe1e560465665eb47d9264826f9" compoundref="main_8c" startline="227" endline="234">Error_Handler</references>
+        <referencedby refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" compoundref="main_8c" startline="65" endline="101">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1ae89fdd15729ad41a66911190fcbab23a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MX_GPIO_Init</definition>
+        <argsstring>(void)</argsstring>
+        <name>MX_GPIO_Init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>GPIO Initialization Function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c" line="148" column="13" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c" bodystart="148" bodyend="217" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c" declline="51" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(void)</argsstring>
+        <name>main</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>The application entry point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c" line="65" column="5" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c" bodystart="65" bodyend="101"/>
+        <references refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" compoundref="main_8c" startline="107" endline="141">SystemClock_Config</references>
+      </memberdef>
+      <memberdef kind="function" id="main_8c_1a1730ffe1e560465665eb47d9264826f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Error_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>Error_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is executed in case of error occurrence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c" line="227" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c" bodystart="227" bodyend="234"/>
+        <referencedby refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" compoundref="main_8c" startline="107" endline="141">SystemClock_Config</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>: Main program body </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para></para>
+</simplesect>
+<heading level="2"><center><copy/> Copyright (c) 2021 STMicroelectronics. All rights reserved.</center></heading>
+</para>
+<para>This software component is licensed by ST under Ultimate Liberty license SLA0044, the &quot;License&quot;; You may not use this file except in compliance with the License. You may obtain a copy of the License at: www.st.com/SLA0044 </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="main_8h" kindref="compound">main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_device.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>includes<sp/>----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bootloader_8h" kindref="compound">bootloader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>typedef<sp/>-----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>PTD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>PTD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>define<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>PD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>PD<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macro<sp/>-------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>PM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>PM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>variables<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>PV<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>PV<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>function<sp/>prototypes<sp/>-----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" kindref="member">SystemClock_Config</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MX_GPIO_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>PFP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>PFP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>user<sp/>code<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a840291bc02cba5474a4cb46a9b9566fe" kindref="member">main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>MCU<sp/>Configuration--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>of<sp/>all<sp/>peripherals,<sp/>Initializes<sp/>the<sp/>Flash<sp/>interface<sp/>and<sp/>the<sp/>Systick.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_Init();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Init<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configure<sp/>the<sp/>system<sp/>clock<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" kindref="member">SystemClock_Config</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>SysInit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>SysInit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>all<sp/>configured<sp/>peripherals<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>MX_GPIO_Init();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>MX_USB_DEVICE_Init();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a2fd598a0b153c1c690e643d57ccdb75d" kindref="member">bootloaderInit</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Infinite<sp/>loop<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>WHILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>WHILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" kindref="member">SystemClock_Config</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_OscInitTypeDef<sp/>RCC_OscInitStruct<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_ClkInitTypeDef<sp/>RCC_ClkInitStruct<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_PWR_CLK_ENABLE();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_OscInitStruct.OscillatorType<sp/>=<sp/>RCC_OSCILLATORTYPE_HSE;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_OscInitStruct.HSEState<sp/>=<sp/>RCC_HSE_ON;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_OscInitStruct.PLL.PLLState<sp/>=<sp/>RCC_PLL_ON;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_OscInitStruct.PLL.PLLSource<sp/>=<sp/>RCC_PLLSOURCE_HSE;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_OscInitStruct.PLL.PLLM<sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_OscInitStruct.PLL.PLLN<sp/>=<sp/>336;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_OscInitStruct.PLL.PLLP<sp/>=<sp/>RCC_PLLP_DIV2;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_OscInitStruct.PLL.PLLQ<sp/>=<sp/>7;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(HAL_RCC_OscConfig(&amp;RCC_OscInitStruct)<sp/>!=<sp/>HAL_OK)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_ClkInitStruct.ClockType<sp/>=<sp/>RCC_CLOCKTYPE_HCLK<sp/>|<sp/>RCC_CLOCKTYPE_SYSCLK</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>RCC_CLOCKTYPE_PCLK1<sp/>|<sp/>RCC_CLOCKTYPE_PCLK2;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_ClkInitStruct.SYSCLKSource<sp/>=<sp/>RCC_SYSCLKSOURCE_PLLCLK;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_ClkInitStruct.AHBCLKDivider<sp/>=<sp/>RCC_SYSCLK_DIV1;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_ClkInitStruct.APB1CLKDivider<sp/>=<sp/>RCC_HCLK_DIV4;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>RCC_ClkInitStruct.APB2CLKDivider<sp/>=<sp/>RCC_HCLK_DIV2;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(HAL_RCC_ClockConfig(&amp;RCC_ClkInitStruct,<sp/>FLASH_LATENCY_5)<sp/>!=<sp/>HAL_OK)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8c_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MX_GPIO_Init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitTypeDef<sp/>GPIO_InitStruct<sp/>=<sp/>{<sp/>0<sp/>};</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>GPIO<sp/>Ports<sp/>Clock<sp/>Enable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_GPIOE_CLK_ENABLE();</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_GPIOC_CLK_ENABLE();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_GPIOH_CLK_ENABLE();</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_GPIOA_CLK_ENABLE();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_GPIOB_CLK_ENABLE();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_GPIOD_CLK_ENABLE();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Configure<sp/>GPIO<sp/>pin<sp/>Output<sp/>Level<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a7376069a8614f3df165407bb66f3bf96" kindref="member">CS_I2C_SPI_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a5dae5c66a2fb82ae243304f213f3eb2c" kindref="member">CS_I2C_SPI_Pin</ref>,<sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Configure<sp/>GPIO<sp/>pin<sp/>Output<sp/>Level<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a2576ccc509ae6bbef01dc3e7bfd63d7d" kindref="member">OTG_FS_PowerSwitchOn_GPIO_Port</ref>,<sp/><ref refid="main_8h_1a4906d24ad629543e7b4c2d65a5cd1b9f" kindref="member">OTG_FS_PowerSwitchOn_Pin</ref>,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Configure<sp/>GPIO<sp/>pin<sp/>Output<sp/>Level<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(GPIOD,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="main_8h_1a6664d0311f9f672b321e0daff34b7ad4" kindref="member">LD4_Pin</ref><sp/>|<sp/><ref refid="main_8h_1a71154fae0eacbdf882bd1481164f0652" kindref="member">LD3_Pin</ref><sp/>|<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref><sp/>|<sp/><ref refid="main_8h_1af752fb7d74e778ecaf48784c6f2fa107" kindref="member">LD6_Pin</ref><sp/>|<sp/><ref refid="main_8h_1a2f3e6e13c04b994c6058e37ecb83e24d" kindref="member">Audio_RST_Pin</ref>,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Configure<sp/>GPIO<sp/>pin<sp/>:<sp/>CS_I2C_SPI_Pin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pin<sp/>=<sp/><ref refid="main_8h_1a5dae5c66a2fb82ae243304f213f3eb2c" kindref="member">CS_I2C_SPI_Pin</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Mode<sp/>=<sp/>GPIO_MODE_OUTPUT_PP;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pull<sp/>=<sp/>GPIO_NOPULL;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Speed<sp/>=<sp/>GPIO_SPEED_FREQ_LOW;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_Init(<ref refid="main_8h_1a7376069a8614f3df165407bb66f3bf96" kindref="member">CS_I2C_SPI_GPIO_Port</ref>,<sp/>&amp;GPIO_InitStruct);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Configure<sp/>GPIO<sp/>pin<sp/>:<sp/>OTG_FS_PowerSwitchOn_Pin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pin<sp/>=<sp/><ref refid="main_8h_1a4906d24ad629543e7b4c2d65a5cd1b9f" kindref="member">OTG_FS_PowerSwitchOn_Pin</ref>;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Mode<sp/>=<sp/>GPIO_MODE_OUTPUT_PP;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pull<sp/>=<sp/>GPIO_NOPULL;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Speed<sp/>=<sp/>GPIO_SPEED_FREQ_LOW;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_Init(<ref refid="main_8h_1a2576ccc509ae6bbef01dc3e7bfd63d7d" kindref="member">OTG_FS_PowerSwitchOn_GPIO_Port</ref>,<sp/>&amp;GPIO_InitStruct);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Configure<sp/>GPIO<sp/>pin<sp/>:<sp/>B1_Pin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pin<sp/>=<sp/><ref refid="main_8h_1a31ac298fbbc8a1d6de1dc4577a108232" kindref="member">B1_Pin</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Mode<sp/>=<sp/>GPIO_MODE_EVT_RISING;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pull<sp/>=<sp/>GPIO_NOPULL;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_Init(<ref refid="main_8h_1a4926b92dcb220e465850d9616c27e171" kindref="member">B1_GPIO_Port</ref>,<sp/>&amp;GPIO_InitStruct);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Configure<sp/>GPIO<sp/>pin<sp/>:<sp/>BOOT1_Pin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pin<sp/>=<sp/><ref refid="main_8h_1aebae48d3fc48ba1ec453ecd93f5f4b43" kindref="member">BOOT1_Pin</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Mode<sp/>=<sp/>GPIO_MODE_INPUT;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pull<sp/>=<sp/>GPIO_NOPULL;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_Init(<ref refid="main_8h_1a70e2b63cb50fea2a3fae3e13112e3e20" kindref="member">BOOT1_GPIO_Port</ref>,<sp/>&amp;GPIO_InitStruct);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Configure<sp/>GPIO<sp/>pin<sp/>:<sp/>App_Pin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pin<sp/>=<sp/><ref refid="main_8h_1a5257de34889755a21b6c16214f52ed89" kindref="member">App_Pin</ref>;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Mode<sp/>=<sp/>GPIO_MODE_INPUT;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pull<sp/>=<sp/>GPIO_NOPULL;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_Init(<ref refid="main_8h_1a0f81e854f1ee56e10679425fbcd116ae" kindref="member">App_GPIO_Port</ref>,<sp/>&amp;GPIO_InitStruct);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Configure<sp/>GPIO<sp/>pins<sp/>:<sp/>LD4_Pin<sp/>LD3_Pin<sp/>LD5_Pin<sp/>LD6_Pin</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>Audio_RST_Pin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pin<sp/>=<sp/><ref refid="main_8h_1a6664d0311f9f672b321e0daff34b7ad4" kindref="member">LD4_Pin</ref><sp/>|<sp/><ref refid="main_8h_1a71154fae0eacbdf882bd1481164f0652" kindref="member">LD3_Pin</ref><sp/>|<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref><sp/>|<sp/><ref refid="main_8h_1af752fb7d74e778ecaf48784c6f2fa107" kindref="member">LD6_Pin</ref><sp/>|<sp/><ref refid="main_8h_1a2f3e6e13c04b994c6058e37ecb83e24d" kindref="member">Audio_RST_Pin</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Mode<sp/>=<sp/>GPIO_MODE_OUTPUT_PP;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pull<sp/>=<sp/>GPIO_NOPULL;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Speed<sp/>=<sp/>GPIO_SPEED_FREQ_LOW;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_Init(GPIOD,<sp/>&amp;GPIO_InitStruct);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Configure<sp/>GPIO<sp/>pin<sp/>:<sp/>OTG_FS_OverCurrent_Pin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pin<sp/>=<sp/><ref refid="main_8h_1a6309490f48597e6babbceea1d42f3098" kindref="member">OTG_FS_OverCurrent_Pin</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Mode<sp/>=<sp/>GPIO_MODE_INPUT;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>GPIO_InitStruct.Pull<sp/>=<sp/>GPIO_NOPULL;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_Init(<ref refid="main_8h_1a19f80096efa2ccb7bc032c1816b3edbf" kindref="member">OTG_FS_OverCurrent_GPIO_Port</ref>,<sp/>&amp;GPIO_InitStruct);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8c_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Error_Handler_Debug<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>User<sp/>can<sp/>add<sp/>his<sp/>own<sp/>implementation<sp/>to<sp/>report<sp/>the<sp/>HAL<sp/>error<sp/>return<sp/>state<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>__disable_irq();</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Error_Handler_Debug<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>USE_FULL_ASSERT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>assert_failed(uint8_t<sp/>*file,<sp/>uint32_t<sp/>line)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>6<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>User<sp/>can<sp/>add<sp/>his<sp/>own<sp/>implementation<sp/>to<sp/>report<sp/>the<sp/>file<sp/>name<sp/>and<sp/>line<sp/>number,</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>ex:<sp/>printf(&quot;Wrong<sp/>parameters<sp/>value:<sp/>file<sp/>%s<sp/>on<sp/>line<sp/>%d\r\n&quot;,<sp/>file,<sp/>line)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>6<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USE_FULL_ASSERT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="comment">/************************<sp/>(C)<sp/>COPYRIGHT<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c"/>
+  </compounddef>
+</doxygen>

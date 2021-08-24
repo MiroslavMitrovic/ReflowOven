@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_1e65d6df7fb598be586b79597aba7ecb" kind="dir">
+    <compoundname>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0</compoundname>
+    <innerdir refid="dir_d0dfb2b05dd2d48855aed9b4b9a7407c">C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_da50d946415b18ceb8a96e8ca6395e22" xml:lang="en-US">
+<title>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core Directory Reference</title>
+<indexterm><primary>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_9cfeededd04dbc09635d735c72a2103e">Inc</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_23ab754fcf9377e23783436f47bcc718">Src</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

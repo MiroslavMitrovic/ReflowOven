@@ -1,0 +1,15 @@
+digraph "C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d0dfb2b05dd2d48855aed9b4b9a7407c {
+    graph [ bgcolor="#ddddee", pencolor="black", label="STM32F407VGT_Bootloader" fontname="Helvetica", fontsize="10", URL="dir_d0dfb2b05dd2d48855aed9b4b9a7407c.html"]
+  subgraph clusterdir_da50d946415b18ceb8a96e8ca6395e22 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_da50d946415b18ceb8a96e8ca6395e22.html"];
+    dir_da50d946415b18ceb8a96e8ca6395e22 [shape=plaintext label="Core"];
+  dir_9cfeededd04dbc09635d735c72a2103e [shape=box label="Inc" fillcolor="white" style="filled" URL="dir_9cfeededd04dbc09635d735c72a2103e.html"];
+  dir_23ab754fcf9377e23783436f47bcc718 [shape=box label="Src" fillcolor="white" style="filled" URL="dir_23ab754fcf9377e23783436f47bcc718.html"];
+  }
+  }
+  dir_23ab754fcf9377e23783436f47bcc718->dir_9cfeededd04dbc09635d735c72a2103e [headlabel="5", labeldistance=1.5 headhref="dir_000007_000006.html"];
+}

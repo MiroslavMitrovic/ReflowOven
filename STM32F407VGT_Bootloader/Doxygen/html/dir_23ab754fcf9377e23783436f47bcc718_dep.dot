@@ -1,0 +1,11 @@
+digraph "C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_da50d946415b18ceb8a96e8ca6395e22 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Core" fontname="Helvetica", fontsize="10", URL="dir_da50d946415b18ceb8a96e8ca6395e22.html"]
+  dir_9cfeededd04dbc09635d735c72a2103e [shape=box label="Inc" URL="dir_9cfeededd04dbc09635d735c72a2103e.html"];
+  dir_23ab754fcf9377e23783436f47bcc718 [shape=box, label="Src", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_23ab754fcf9377e23783436f47bcc718.html"];
+  }
+  dir_23ab754fcf9377e23783436f47bcc718->dir_9cfeededd04dbc09635d735c72a2103e [headlabel="5", labeldistance=1.5 headhref="dir_000007_000006.html"];
+}

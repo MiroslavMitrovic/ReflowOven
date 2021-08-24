@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_jump_struct" xml:lang="en-US">
+<title>JumpStruct Struct Reference</title>
+<indexterm><primary>JumpStruct</primary></indexterm>
+<para>
+<computeroutput>#include &lt;bootloader.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_struct_jump_struct_1a5877aab5a6693adb815eacc13326c85a">stack_addr</link></para>
+</listitem>
+            <listitem><para><link linkend="_bootloader_8h_1a9737ef58c9961a76fa18170f200acf98">application_t</link> * <link linkend="_struct_jump_struct_1a068b3d57387519e10bc727c093c3b783">func_p</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_struct_jump_struct_1a068b3d57387519e10bc727c093c3b783"/>    <section>
+    <title>func_p</title>
+<indexterm><primary>func_p</primary><secondary>JumpStruct</secondary></indexterm>
+<indexterm><primary>JumpStruct</primary><secondary>func_p</secondary></indexterm>
+<para><computeroutput><link linkend="_bootloader_8h_1a9737ef58c9961a76fa18170f200acf98">application_t</link>* func_p</computeroutput></para>    </section><anchor xml:id="_struct_jump_struct_1a5877aab5a6693adb815eacc13326c85a"/>    <section>
+    <title>stack_addr</title>
+<indexterm><primary>stack_addr</primary><secondary>JumpStruct</secondary></indexterm>
+<indexterm><primary>JumpStruct</primary><secondary>stack_addr</secondary></indexterm>
+<para><computeroutput>uint32_t stack_addr</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/<link linkend="_bootloader_8h">bootloader.h</link></section>
+</section>

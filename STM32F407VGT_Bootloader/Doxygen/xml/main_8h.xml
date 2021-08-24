@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="main_8h" kind="file" language="C++">
+    <compoundname>main.h</compoundname>
+    <includes local="yes">stm32f4xx_hal.h</includes>
+    <includedby refid="bootloader_8h" local="yes">C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h</includedby>
+    <includedby refid="main_8c" local="yes">C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c</includedby>
+    <includedby refid="stm32f4xx__hal__msp_8c" local="yes">C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/stm32f4xx_hal_msp.c</includedby>
+    <includedby refid="stm32f4xx__it_8c" local="yes">C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/stm32f4xx_it.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/stm32f4xx_it.c</label>
+        <link refid="stm32f4xx__it_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/stm32f4xx_hal_msp.c</label>
+        <link refid="stm32f4xx__hal__msp_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h</label>
+        <link refid="bootloader_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="main_8h_1a5dae5c66a2fb82ae243304f213f3eb2c" prot="public" static="no">
+        <name>CS_I2C_SPI_Pin</name>
+        <initializer>GPIO_PIN_3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="61" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a7376069a8614f3df165407bb66f3bf96" prot="public" static="no">
+        <name>CS_I2C_SPI_GPIO_Port</name>
+        <initializer>GPIOE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="62" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a7d43c0c8b91a6510d9f474f78f57e5c9" prot="public" static="no">
+        <name>PC14_OSC32_IN_Pin</name>
+        <initializer>GPIO_PIN_14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="63" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1ac1324283f34366c96d7372e4ee4c603a" prot="public" static="no">
+        <name>PC14_OSC32_IN_GPIO_Port</name>
+        <initializer>GPIOC</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="64" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a4b7e48c6ffe3574f97f8fce18cae84de" prot="public" static="no">
+        <name>PC15_OSC32_OUT_Pin</name>
+        <initializer>GPIO_PIN_15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="65" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a77c4021efe27a551dc9d2884422b0fae" prot="public" static="no">
+        <name>PC15_OSC32_OUT_GPIO_Port</name>
+        <initializer>GPIOC</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="66" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1addb0c037a01bd73baaf9f7d5a0379ac4" prot="public" static="no">
+        <name>PH0_OSC_IN_Pin</name>
+        <initializer>GPIO_PIN_0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="67" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1af8885fc2f50640cd8bb5084cd998088b" prot="public" static="no">
+        <name>PH0_OSC_IN_GPIO_Port</name>
+        <initializer>GPIOH</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="68" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1ac4d4c1fdbc6cd7491c705bd332f15693" prot="public" static="no">
+        <name>PH1_OSC_OUT_Pin</name>
+        <initializer>GPIO_PIN_1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="69" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a5b80653bbe01e9d4f334c74bdc5bc9f6" prot="public" static="no">
+        <name>PH1_OSC_OUT_GPIO_Port</name>
+        <initializer>GPIOH</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="70" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a4906d24ad629543e7b4c2d65a5cd1b9f" prot="public" static="no">
+        <name>OTG_FS_PowerSwitchOn_Pin</name>
+        <initializer>GPIO_PIN_0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="71" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a2576ccc509ae6bbef01dc3e7bfd63d7d" prot="public" static="no">
+        <name>OTG_FS_PowerSwitchOn_GPIO_Port</name>
+        <initializer>GPIOC</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="72" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a31ac298fbbc8a1d6de1dc4577a108232" prot="public" static="no">
+        <name>B1_Pin</name>
+        <initializer>GPIO_PIN_0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="73" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a4926b92dcb220e465850d9616c27e171" prot="public" static="no">
+        <name>B1_GPIO_Port</name>
+        <initializer>GPIOA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="74" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1aebae48d3fc48ba1ec453ecd93f5f4b43" prot="public" static="no">
+        <name>BOOT1_Pin</name>
+        <initializer>GPIO_PIN_2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="75" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a70e2b63cb50fea2a3fae3e13112e3e20" prot="public" static="no">
+        <name>BOOT1_GPIO_Port</name>
+        <initializer>GPIOB</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="76" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a5257de34889755a21b6c16214f52ed89" prot="public" static="no">
+        <name>App_Pin</name>
+        <initializer>GPIO_PIN_7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="77" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a0f81e854f1ee56e10679425fbcd116ae" prot="public" static="no">
+        <name>App_GPIO_Port</name>
+        <initializer>GPIOE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="78" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a6664d0311f9f672b321e0daff34b7ad4" prot="public" static="no">
+        <name>LD4_Pin</name>
+        <initializer>GPIO_PIN_12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="79" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a4cc05543336aab13c54fd6aa62fd4523" prot="public" static="no">
+        <name>LD4_GPIO_Port</name>
+        <initializer>GPIOD</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="80" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a71154fae0eacbdf882bd1481164f0652" prot="public" static="no">
+        <name>LD3_Pin</name>
+        <initializer>GPIO_PIN_13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="81" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1ae851c2d6146e6d4fac9f4a9983f5cf1f" prot="public" static="no">
+        <name>LD3_GPIO_Port</name>
+        <initializer>GPIOD</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="82" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" prot="public" static="no">
+        <name>LD5_Pin</name>
+        <initializer>GPIO_PIN_14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="83" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" prot="public" static="no">
+        <name>LD5_GPIO_Port</name>
+        <initializer>GPIOD</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="84" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1af752fb7d74e778ecaf48784c6f2fa107" prot="public" static="no">
+        <name>LD6_Pin</name>
+        <initializer>GPIO_PIN_15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="85" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a4154850b2c5b4cfc8bbdd4c3b5abd0eb" prot="public" static="no">
+        <name>LD6_GPIO_Port</name>
+        <initializer>GPIOD</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="86" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a29157cfd259518562da456a42924bc48" prot="public" static="no">
+        <name>OTG_FS_DM_Pin</name>
+        <initializer>GPIO_PIN_11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="87" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1ade6d56d300ee56497bdc2915a29d0e9d" prot="public" static="no">
+        <name>OTG_FS_DM_GPIO_Port</name>
+        <initializer>GPIOA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="88" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1abb6023b5dd0bbbe81e53018c435af61d" prot="public" static="no">
+        <name>OTG_FS_DP_Pin</name>
+        <initializer>GPIO_PIN_12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="89" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a5203f09c46ff7a042660a5fd5af2d0db" prot="public" static="no">
+        <name>OTG_FS_DP_GPIO_Port</name>
+        <initializer>GPIOA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="90" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1ac30893c7c5dd78cf02632dc653c3e74e" prot="public" static="no">
+        <name>SWDIO_Pin</name>
+        <initializer>GPIO_PIN_13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="91" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a0d6c5c9d267a552e5bb02eb57498f683" prot="public" static="no">
+        <name>SWDIO_GPIO_Port</name>
+        <initializer>GPIOA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="92" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1ad2e9165c92edc48968db01ca88c27822" prot="public" static="no">
+        <name>SWCLK_Pin</name>
+        <initializer>GPIO_PIN_14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="93" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a54d419ccaa2653d1bceae3f1a7206890" prot="public" static="no">
+        <name>SWCLK_GPIO_Port</name>
+        <initializer>GPIOA</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="94" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a2f3e6e13c04b994c6058e37ecb83e24d" prot="public" static="no">
+        <name>Audio_RST_Pin</name>
+        <initializer>GPIO_PIN_4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="95" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a123a8e625fce2076aab4937fa36c7727" prot="public" static="no">
+        <name>Audio_RST_GPIO_Port</name>
+        <initializer>GPIOD</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="96" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a6309490f48597e6babbceea1d42f3098" prot="public" static="no">
+        <name>OTG_FS_OverCurrent_Pin</name>
+        <initializer>GPIO_PIN_5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="97" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a19f80096efa2ccb7bc032c1816b3edbf" prot="public" static="no">
+        <name>OTG_FS_OverCurrent_GPIO_Port</name>
+        <initializer>GPIOD</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="98" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8h_1a1730ffe1e560465665eb47d9264826f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Error_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>Error_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>This function is executed in case of error occurrence. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" line="54" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c" bodystart="227" bodyend="234" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h" declline="54" declcolumn="6"/>
+        <referencedby refid="main_8c_1a70af21c671abfcc773614a9a4f63d920" compoundref="main_8c" startline="107" endline="141">SystemClock_Config</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>: Header for <ref refid="main_8c" kindref="compound">main.c</ref> file. This file contains the common defines of the application. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="attention"><para></para>
+</simplesect>
+<heading level="2"><center><copy/> Copyright (c) 2021 STMicroelectronics. All rights reserved.</center></heading>
+</para>
+<para>This software component is licensed by ST under Ultimate Liberty license SLA0044, the &quot;License&quot;; You may not use this file except in compliance with the License. You may obtain a copy of the License at: www.st.com/SLA0044 </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__MAIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__MAIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stm32f4xx_hal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>includes<sp/>----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Includes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>ET<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>ET<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>EC<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>EC<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macro<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>EM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>EM<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>prototypes<sp/>---------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8h_1a1730ffe1e560465665eb47d9264826f9" kindref="member">Error_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>EFP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>EFP<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>defines<sp/>-----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="main_8h_1a5dae5c66a2fb82ae243304f213f3eb2c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CS_I2C_SPI_Pin<sp/>GPIO_PIN_3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="main_8h_1a7376069a8614f3df165407bb66f3bf96" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CS_I2C_SPI_GPIO_Port<sp/>GPIOE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="main_8h_1a7d43c0c8b91a6510d9f474f78f57e5c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PC14_OSC32_IN_Pin<sp/>GPIO_PIN_14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="main_8h_1ac1324283f34366c96d7372e4ee4c603a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PC14_OSC32_IN_GPIO_Port<sp/>GPIOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="main_8h_1a4b7e48c6ffe3574f97f8fce18cae84de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PC15_OSC32_OUT_Pin<sp/>GPIO_PIN_15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="main_8h_1a77c4021efe27a551dc9d2884422b0fae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PC15_OSC32_OUT_GPIO_Port<sp/>GPIOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="main_8h_1addb0c037a01bd73baaf9f7d5a0379ac4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PH0_OSC_IN_Pin<sp/>GPIO_PIN_0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="main_8h_1af8885fc2f50640cd8bb5084cd998088b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PH0_OSC_IN_GPIO_Port<sp/>GPIOH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="main_8h_1ac4d4c1fdbc6cd7491c705bd332f15693" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PH1_OSC_OUT_Pin<sp/>GPIO_PIN_1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="main_8h_1a5b80653bbe01e9d4f334c74bdc5bc9f6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PH1_OSC_OUT_GPIO_Port<sp/>GPIOH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="main_8h_1a4906d24ad629543e7b4c2d65a5cd1b9f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OTG_FS_PowerSwitchOn_Pin<sp/>GPIO_PIN_0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="main_8h_1a2576ccc509ae6bbef01dc3e7bfd63d7d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OTG_FS_PowerSwitchOn_GPIO_Port<sp/>GPIOC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="main_8h_1a31ac298fbbc8a1d6de1dc4577a108232" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B1_Pin<sp/>GPIO_PIN_0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="main_8h_1a4926b92dcb220e465850d9616c27e171" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B1_GPIO_Port<sp/>GPIOA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="main_8h_1aebae48d3fc48ba1ec453ecd93f5f4b43" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOOT1_Pin<sp/>GPIO_PIN_2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="main_8h_1a70e2b63cb50fea2a3fae3e13112e3e20" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOOT1_GPIO_Port<sp/>GPIOB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="main_8h_1a5257de34889755a21b6c16214f52ed89" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>App_Pin<sp/>GPIO_PIN_7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="main_8h_1a0f81e854f1ee56e10679425fbcd116ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>App_GPIO_Port<sp/>GPIOE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="main_8h_1a6664d0311f9f672b321e0daff34b7ad4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LD4_Pin<sp/>GPIO_PIN_12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="main_8h_1a4cc05543336aab13c54fd6aa62fd4523" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LD4_GPIO_Port<sp/>GPIOD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="main_8h_1a71154fae0eacbdf882bd1481164f0652" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LD3_Pin<sp/>GPIO_PIN_13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="main_8h_1ae851c2d6146e6d4fac9f4a9983f5cf1f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LD3_GPIO_Port<sp/>GPIOD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LD5_Pin<sp/>GPIO_PIN_14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LD5_GPIO_Port<sp/>GPIOD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="main_8h_1af752fb7d74e778ecaf48784c6f2fa107" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LD6_Pin<sp/>GPIO_PIN_15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="main_8h_1a4154850b2c5b4cfc8bbdd4c3b5abd0eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LD6_GPIO_Port<sp/>GPIOD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="main_8h_1a29157cfd259518562da456a42924bc48" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OTG_FS_DM_Pin<sp/>GPIO_PIN_11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="main_8h_1ade6d56d300ee56497bdc2915a29d0e9d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OTG_FS_DM_GPIO_Port<sp/>GPIOA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="main_8h_1abb6023b5dd0bbbe81e53018c435af61d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OTG_FS_DP_Pin<sp/>GPIO_PIN_12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="main_8h_1a5203f09c46ff7a042660a5fd5af2d0db" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OTG_FS_DP_GPIO_Port<sp/>GPIOA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="main_8h_1ac30893c7c5dd78cf02632dc653c3e74e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWDIO_Pin<sp/>GPIO_PIN_13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="main_8h_1a0d6c5c9d267a552e5bb02eb57498f683" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWDIO_GPIO_Port<sp/>GPIOA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="main_8h_1ad2e9165c92edc48968db01ca88c27822" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWCLK_Pin<sp/>GPIO_PIN_14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="main_8h_1a54d419ccaa2653d1bceae3f1a7206890" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWCLK_GPIO_Port<sp/>GPIOA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="main_8h_1a2f3e6e13c04b994c6058e37ecb83e24d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Audio_RST_Pin<sp/>GPIO_PIN_4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="main_8h_1a123a8e625fce2076aab4937fa36c7727" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Audio_RST_GPIO_Port<sp/>GPIOD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="main_8h_1a6309490f48597e6babbceea1d42f3098" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OTG_FS_OverCurrent_Pin<sp/>GPIO_PIN_5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="main_8h_1a19f80096efa2ccb7bc032c1816b3edbf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OTG_FS_OverCurrent_GPIO_Port<sp/>GPIOD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>BEGIN<sp/>Private<sp/>defines<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>USER<sp/>CODE<sp/>END<sp/>Private<sp/>defines<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__MAIN_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">/************************<sp/>(C)<sp/>COPYRIGHT<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h"/>
+  </compounddef>
+</doxygen>

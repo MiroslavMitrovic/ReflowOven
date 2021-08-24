@@ -1,0 +1,215 @@
+.TH "C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" 3 "Thu Aug 5 2021" "STM32F407VGT_BL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+\fC#include 'usbd_cdc_if\&.h'\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBJumpStruct\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBAPP1_START\fP   (0x08020000)"
+.br
+.ti -1c
+.RI "#define \fBAPP2_START\fP   (0x08040000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_SECTOR_SIZE\fP   (0x20000)"
+.br
+.ti -1c
+.RI "#define \fBFLASH_SECTOR_SIZE_USER\fP   (0x1A000)	/*104kB(APP+BL)*/"
+.br
+.ti -1c
+.RI "#define \fBERASE_FLASH_MEMORY\fP   '#$ERASE_MEM'"
+.br
+.ti -1c
+.RI "#define \fBFLASHING_START\fP   '#$FLASH_START'"
+.br
+.ti -1c
+.RI "#define \fBFLASHING_FINISH\fP   '#$FLASH_FINISH'"
+.br
+.ti -1c
+.RI "#define \fBFLASHING_ABORT\fP   '#$FLASH_ABORT'"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef void() \fBapplication_t\fP(void)"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBBootloaderMode\fP { \fBJumpMode\fP, \fBFlashMode\fP }"
+.br
+.ti -1c
+.RI "enum \fBAppSelection\fP { \fBApp1\fP, \fBApp2\fP }"
+.br
+.ti -1c
+.RI "enum \fBFlashStatus\fP { \fBUnerased\fP, \fBErased\fP, \fBUnlocked\fP, \fBLocked\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBbootloaderInit\fP ()"
+.br
+.ti -1c
+.RI "void \fBflashWord\fP (uint32_t word)"
+.br
+.ti -1c
+.RI "uint32_t \fBreadWord\fP (uint32_t address)"
+.br
+.ti -1c
+.RI "void \fBeraseMemory\fP ()"
+.br
+.ti -1c
+.RI "void \fBunlockFlashAndEraseMemory\fP ()"
+.br
+.ti -1c
+.RI "void \fBlockFlash\fP ()"
+.br
+.ti -1c
+.RI "void \fBjumpToApp\fP ()"
+.br
+.ti -1c
+.RI "void \fBdeinitEverything\fP ()"
+.br
+.ti -1c
+.RI "uint8_t \fBstring_compare\fP (char array1[], char array2[], uint16_t length)"
+.br
+.ti -1c
+.RI "void \fBerrorBlink\fP ()"
+.br
+.ti -1c
+.RI "void \fBmessageHandler\fP (uint8_t *Buf)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBAppSelection\fP \fBApp\fP"
+.br
+.ti -1c
+.RI "uint32_t \fBFlashed_offset\fP"
+.br
+.ti -1c
+.RI "\fBFlashStatus\fP \fBflashStatus\fP"
+.br
+.ti -1c
+.RI "USBD_HandleTypeDef \fBhUsbDeviceFS\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define APP1_START   (0x08020000)"
+
+.SS "#define APP2_START   (0x08040000)"
+
+.SS "#define ERASE_FLASH_MEMORY   '#$ERASE_MEM'"
+
+.SS "#define FLASH_SECTOR_SIZE   (0x20000)"
+
+.SS "#define FLASH_SECTOR_SIZE_USER   (0x1A000)	/*104kB(APP+BL)*/"
+
+.SS "#define FLASHING_ABORT   '#$FLASH_ABORT'"
+
+.SS "#define FLASHING_FINISH   '#$FLASH_FINISH'"
+
+.SS "#define FLASHING_START   '#$FLASH_START'"
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef void() application_t(void)"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBAppSelection\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIApp1 \fP\fP
+.TP
+\fB\fIApp2 \fP\fP
+.SS "enum \fBBootloaderMode\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIJumpMode \fP\fP
+.TP
+\fB\fIFlashMode \fP\fP
+.SS "enum \fBFlashStatus\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIUnerased \fP\fP
+.TP
+\fB\fIErased \fP\fP
+.TP
+\fB\fIUnlocked \fP\fP
+.TP
+\fB\fILocked \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "void bootloaderInit ()"
+
+.SS "void deinitEverything ()"
+
+.SS "void eraseMemory ()"
+
+.SS "void errorBlink ()"
+
+.SS "void flashWord (uint32_t word)"
+
+.SS "void jumpToApp ()"
+
+.SS "void lockFlash ()"
+
+.SS "void messageHandler (uint8_t * Buf)"
+
+.SS "uint32_t readWord (uint32_t address)"
+
+.SS "uint8_t string_compare (char array1[], char array2[], uint16_t length)"
+
+.SS "void unlockFlashAndEraseMemory ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "\fBAppSelection\fP App"
+
+.SS "uint32_t Flashed_offset"
+
+.SS "\fBFlashStatus\fP flashStatus"
+
+.SS "USBD_HandleTypeDef hUsbDeviceFS\fC [extern]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STM32F407VGT_BL from the source code\&.

@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_8h" xml:lang="en-US">
+<title>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h File Reference</title>
+<indexterm><primary>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/main.h</primary></indexterm>
+<para>
+
+<para>: Header for <link linkend="_main_8c">main.c</link> file. This file contains the common defines of the application. </para>
+ 
+</para>
+<programlisting>#include &quot;stm32f4xx_hal.h&quot;
+</programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_main_8h_1a5dae5c66a2fb82ae243304f213f3eb2c">CS_I2C_SPI_Pin</link>   GPIO_PIN_3</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a7376069a8614f3df165407bb66f3bf96">CS_I2C_SPI_GPIO_Port</link>   GPIOE</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a7d43c0c8b91a6510d9f474f78f57e5c9">PC14_OSC32_IN_Pin</link>   GPIO_PIN_14</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1ac1324283f34366c96d7372e4ee4c603a">PC14_OSC32_IN_GPIO_Port</link>   GPIOC</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a4b7e48c6ffe3574f97f8fce18cae84de">PC15_OSC32_OUT_Pin</link>   GPIO_PIN_15</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a77c4021efe27a551dc9d2884422b0fae">PC15_OSC32_OUT_GPIO_Port</link>   GPIOC</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1addb0c037a01bd73baaf9f7d5a0379ac4">PH0_OSC_IN_Pin</link>   GPIO_PIN_0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1af8885fc2f50640cd8bb5084cd998088b">PH0_OSC_IN_GPIO_Port</link>   GPIOH</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1ac4d4c1fdbc6cd7491c705bd332f15693">PH1_OSC_OUT_Pin</link>   GPIO_PIN_1</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a5b80653bbe01e9d4f334c74bdc5bc9f6">PH1_OSC_OUT_GPIO_Port</link>   GPIOH</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a4906d24ad629543e7b4c2d65a5cd1b9f">OTG_FS_PowerSwitchOn_Pin</link>   GPIO_PIN_0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a2576ccc509ae6bbef01dc3e7bfd63d7d">OTG_FS_PowerSwitchOn_GPIO_Port</link>   GPIOC</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a31ac298fbbc8a1d6de1dc4577a108232">B1_Pin</link>   GPIO_PIN_0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a4926b92dcb220e465850d9616c27e171">B1_GPIO_Port</link>   GPIOA</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1aebae48d3fc48ba1ec453ecd93f5f4b43">BOOT1_Pin</link>   GPIO_PIN_2</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a70e2b63cb50fea2a3fae3e13112e3e20">BOOT1_GPIO_Port</link>   GPIOB</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a5257de34889755a21b6c16214f52ed89">App_Pin</link>   GPIO_PIN_7</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a0f81e854f1ee56e10679425fbcd116ae">App_GPIO_Port</link>   GPIOE</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a6664d0311f9f672b321e0daff34b7ad4">LD4_Pin</link>   GPIO_PIN_12</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a4cc05543336aab13c54fd6aa62fd4523">LD4_GPIO_Port</link>   GPIOD</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a71154fae0eacbdf882bd1481164f0652">LD3_Pin</link>   GPIO_PIN_13</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1ae851c2d6146e6d4fac9f4a9983f5cf1f">LD3_GPIO_Port</link>   GPIOD</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1aee7b888dd4dbc9a801963f319ed98b11">LD5_Pin</link>   GPIO_PIN_14</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad">LD5_GPIO_Port</link>   GPIOD</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1af752fb7d74e778ecaf48784c6f2fa107">LD6_Pin</link>   GPIO_PIN_15</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a4154850b2c5b4cfc8bbdd4c3b5abd0eb">LD6_GPIO_Port</link>   GPIOD</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a29157cfd259518562da456a42924bc48">OTG_FS_DM_Pin</link>   GPIO_PIN_11</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1ade6d56d300ee56497bdc2915a29d0e9d">OTG_FS_DM_GPIO_Port</link>   GPIOA</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1abb6023b5dd0bbbe81e53018c435af61d">OTG_FS_DP_Pin</link>   GPIO_PIN_12</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a5203f09c46ff7a042660a5fd5af2d0db">OTG_FS_DP_GPIO_Port</link>   GPIOA</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1ac30893c7c5dd78cf02632dc653c3e74e">SWDIO_Pin</link>   GPIO_PIN_13</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a0d6c5c9d267a552e5bb02eb57498f683">SWDIO_GPIO_Port</link>   GPIOA</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1ad2e9165c92edc48968db01ca88c27822">SWCLK_Pin</link>   GPIO_PIN_14</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a54d419ccaa2653d1bceae3f1a7206890">SWCLK_GPIO_Port</link>   GPIOA</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a2f3e6e13c04b994c6058e37ecb83e24d">Audio_RST_Pin</link>   GPIO_PIN_4</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a123a8e625fce2076aab4937fa36c7727">Audio_RST_GPIO_Port</link>   GPIOD</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a6309490f48597e6babbceea1d42f3098">OTG_FS_OverCurrent_Pin</link>   GPIO_PIN_5</para>
+</listitem>
+            <listitem><para>#define <link linkend="_main_8h_1a19f80096efa2ccb7bc032c1816b3edbf">OTG_FS_OverCurrent_GPIO_Port</link>   GPIOD</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_main_8h_1a1730ffe1e560465665eb47d9264826f9">Error_Handler</link> (void)</para>
+
+<para>This function is executed in case of error occurrence. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>: Header for <link linkend="_main_8c">main.c</link> file. This file contains the common defines of the application. </para>
+
+<para><caution><title>Attention</title>
+
+<para></para>
+</caution>
+<formalpara><title><informaltable frame='none'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>&#169; Copyright (c) 2021 STMicroelectronics. All rights reserved.</entry></row></tbody></tgroup></informaltable></title></formalpara>
+</para>
+
+<para>This software component is licensed by ST under Ultimate Liberty license SLA0044, the &quot;License&quot;; You may not use this file except in compliance with the License. You may obtain a copy of the License at: www.st.com/SLA0044 </para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_main_8h_1a0f81e854f1ee56e10679425fbcd116ae"/>    <section>
+    <title>App_GPIO_Port</title>
+<indexterm><primary>App_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>App_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define App_GPIO_Port   GPIOE</computeroutput></para>    </section><anchor xml:id="_main_8h_1a5257de34889755a21b6c16214f52ed89"/>    <section>
+    <title>App_Pin</title>
+<indexterm><primary>App_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>App_Pin</secondary></indexterm>
+<para><computeroutput>#define App_Pin   GPIO_PIN_7</computeroutput></para>    </section><anchor xml:id="_main_8h_1a123a8e625fce2076aab4937fa36c7727"/>    <section>
+    <title>Audio_RST_GPIO_Port</title>
+<indexterm><primary>Audio_RST_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>Audio_RST_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define Audio_RST_GPIO_Port   GPIOD</computeroutput></para>    </section><anchor xml:id="_main_8h_1a2f3e6e13c04b994c6058e37ecb83e24d"/>    <section>
+    <title>Audio_RST_Pin</title>
+<indexterm><primary>Audio_RST_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>Audio_RST_Pin</secondary></indexterm>
+<para><computeroutput>#define Audio_RST_Pin   GPIO_PIN_4</computeroutput></para>    </section><anchor xml:id="_main_8h_1a4926b92dcb220e465850d9616c27e171"/>    <section>
+    <title>B1_GPIO_Port</title>
+<indexterm><primary>B1_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>B1_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define B1_GPIO_Port   GPIOA</computeroutput></para>    </section><anchor xml:id="_main_8h_1a31ac298fbbc8a1d6de1dc4577a108232"/>    <section>
+    <title>B1_Pin</title>
+<indexterm><primary>B1_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>B1_Pin</secondary></indexterm>
+<para><computeroutput>#define B1_Pin   GPIO_PIN_0</computeroutput></para>    </section><anchor xml:id="_main_8h_1a70e2b63cb50fea2a3fae3e13112e3e20"/>    <section>
+    <title>BOOT1_GPIO_Port</title>
+<indexterm><primary>BOOT1_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>BOOT1_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define BOOT1_GPIO_Port   GPIOB</computeroutput></para>    </section><anchor xml:id="_main_8h_1aebae48d3fc48ba1ec453ecd93f5f4b43"/>    <section>
+    <title>BOOT1_Pin</title>
+<indexterm><primary>BOOT1_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>BOOT1_Pin</secondary></indexterm>
+<para><computeroutput>#define BOOT1_Pin   GPIO_PIN_2</computeroutput></para>    </section><anchor xml:id="_main_8h_1a7376069a8614f3df165407bb66f3bf96"/>    <section>
+    <title>CS_I2C_SPI_GPIO_Port</title>
+<indexterm><primary>CS_I2C_SPI_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>CS_I2C_SPI_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define CS_I2C_SPI_GPIO_Port   GPIOE</computeroutput></para>    </section><anchor xml:id="_main_8h_1a5dae5c66a2fb82ae243304f213f3eb2c"/>    <section>
+    <title>CS_I2C_SPI_Pin</title>
+<indexterm><primary>CS_I2C_SPI_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>CS_I2C_SPI_Pin</secondary></indexterm>
+<para><computeroutput>#define CS_I2C_SPI_Pin   GPIO_PIN_3</computeroutput></para>    </section><anchor xml:id="_main_8h_1ae851c2d6146e6d4fac9f4a9983f5cf1f"/>    <section>
+    <title>LD3_GPIO_Port</title>
+<indexterm><primary>LD3_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>LD3_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define LD3_GPIO_Port   GPIOD</computeroutput></para>    </section><anchor xml:id="_main_8h_1a71154fae0eacbdf882bd1481164f0652"/>    <section>
+    <title>LD3_Pin</title>
+<indexterm><primary>LD3_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>LD3_Pin</secondary></indexterm>
+<para><computeroutput>#define LD3_Pin   GPIO_PIN_13</computeroutput></para>    </section><anchor xml:id="_main_8h_1a4cc05543336aab13c54fd6aa62fd4523"/>    <section>
+    <title>LD4_GPIO_Port</title>
+<indexterm><primary>LD4_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>LD4_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define LD4_GPIO_Port   GPIOD</computeroutput></para>    </section><anchor xml:id="_main_8h_1a6664d0311f9f672b321e0daff34b7ad4"/>    <section>
+    <title>LD4_Pin</title>
+<indexterm><primary>LD4_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>LD4_Pin</secondary></indexterm>
+<para><computeroutput>#define LD4_Pin   GPIO_PIN_12</computeroutput></para>    </section><anchor xml:id="_main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad"/>    <section>
+    <title>LD5_GPIO_Port</title>
+<indexterm><primary>LD5_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>LD5_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define LD5_GPIO_Port   GPIOD</computeroutput></para>    </section><anchor xml:id="_main_8h_1aee7b888dd4dbc9a801963f319ed98b11"/>    <section>
+    <title>LD5_Pin</title>
+<indexterm><primary>LD5_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>LD5_Pin</secondary></indexterm>
+<para><computeroutput>#define LD5_Pin   GPIO_PIN_14</computeroutput></para>    </section><anchor xml:id="_main_8h_1a4154850b2c5b4cfc8bbdd4c3b5abd0eb"/>    <section>
+    <title>LD6_GPIO_Port</title>
+<indexterm><primary>LD6_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>LD6_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define LD6_GPIO_Port   GPIOD</computeroutput></para>    </section><anchor xml:id="_main_8h_1af752fb7d74e778ecaf48784c6f2fa107"/>    <section>
+    <title>LD6_Pin</title>
+<indexterm><primary>LD6_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>LD6_Pin</secondary></indexterm>
+<para><computeroutput>#define LD6_Pin   GPIO_PIN_15</computeroutput></para>    </section><anchor xml:id="_main_8h_1ade6d56d300ee56497bdc2915a29d0e9d"/>    <section>
+    <title>OTG_FS_DM_GPIO_Port</title>
+<indexterm><primary>OTG_FS_DM_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>OTG_FS_DM_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define OTG_FS_DM_GPIO_Port   GPIOA</computeroutput></para>    </section><anchor xml:id="_main_8h_1a29157cfd259518562da456a42924bc48"/>    <section>
+    <title>OTG_FS_DM_Pin</title>
+<indexterm><primary>OTG_FS_DM_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>OTG_FS_DM_Pin</secondary></indexterm>
+<para><computeroutput>#define OTG_FS_DM_Pin   GPIO_PIN_11</computeroutput></para>    </section><anchor xml:id="_main_8h_1a5203f09c46ff7a042660a5fd5af2d0db"/>    <section>
+    <title>OTG_FS_DP_GPIO_Port</title>
+<indexterm><primary>OTG_FS_DP_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>OTG_FS_DP_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define OTG_FS_DP_GPIO_Port   GPIOA</computeroutput></para>    </section><anchor xml:id="_main_8h_1abb6023b5dd0bbbe81e53018c435af61d"/>    <section>
+    <title>OTG_FS_DP_Pin</title>
+<indexterm><primary>OTG_FS_DP_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>OTG_FS_DP_Pin</secondary></indexterm>
+<para><computeroutput>#define OTG_FS_DP_Pin   GPIO_PIN_12</computeroutput></para>    </section><anchor xml:id="_main_8h_1a19f80096efa2ccb7bc032c1816b3edbf"/>    <section>
+    <title>OTG_FS_OverCurrent_GPIO_Port</title>
+<indexterm><primary>OTG_FS_OverCurrent_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>OTG_FS_OverCurrent_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define OTG_FS_OverCurrent_GPIO_Port   GPIOD</computeroutput></para>    </section><anchor xml:id="_main_8h_1a6309490f48597e6babbceea1d42f3098"/>    <section>
+    <title>OTG_FS_OverCurrent_Pin</title>
+<indexterm><primary>OTG_FS_OverCurrent_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>OTG_FS_OverCurrent_Pin</secondary></indexterm>
+<para><computeroutput>#define OTG_FS_OverCurrent_Pin   GPIO_PIN_5</computeroutput></para>    </section><anchor xml:id="_main_8h_1a2576ccc509ae6bbef01dc3e7bfd63d7d"/>    <section>
+    <title>OTG_FS_PowerSwitchOn_GPIO_Port</title>
+<indexterm><primary>OTG_FS_PowerSwitchOn_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>OTG_FS_PowerSwitchOn_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define OTG_FS_PowerSwitchOn_GPIO_Port   GPIOC</computeroutput></para>    </section><anchor xml:id="_main_8h_1a4906d24ad629543e7b4c2d65a5cd1b9f"/>    <section>
+    <title>OTG_FS_PowerSwitchOn_Pin</title>
+<indexterm><primary>OTG_FS_PowerSwitchOn_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>OTG_FS_PowerSwitchOn_Pin</secondary></indexterm>
+<para><computeroutput>#define OTG_FS_PowerSwitchOn_Pin   GPIO_PIN_0</computeroutput></para>    </section><anchor xml:id="_main_8h_1ac1324283f34366c96d7372e4ee4c603a"/>    <section>
+    <title>PC14_OSC32_IN_GPIO_Port</title>
+<indexterm><primary>PC14_OSC32_IN_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>PC14_OSC32_IN_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define PC14_OSC32_IN_GPIO_Port   GPIOC</computeroutput></para>    </section><anchor xml:id="_main_8h_1a7d43c0c8b91a6510d9f474f78f57e5c9"/>    <section>
+    <title>PC14_OSC32_IN_Pin</title>
+<indexterm><primary>PC14_OSC32_IN_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>PC14_OSC32_IN_Pin</secondary></indexterm>
+<para><computeroutput>#define PC14_OSC32_IN_Pin   GPIO_PIN_14</computeroutput></para>    </section><anchor xml:id="_main_8h_1a77c4021efe27a551dc9d2884422b0fae"/>    <section>
+    <title>PC15_OSC32_OUT_GPIO_Port</title>
+<indexterm><primary>PC15_OSC32_OUT_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>PC15_OSC32_OUT_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define PC15_OSC32_OUT_GPIO_Port   GPIOC</computeroutput></para>    </section><anchor xml:id="_main_8h_1a4b7e48c6ffe3574f97f8fce18cae84de"/>    <section>
+    <title>PC15_OSC32_OUT_Pin</title>
+<indexterm><primary>PC15_OSC32_OUT_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>PC15_OSC32_OUT_Pin</secondary></indexterm>
+<para><computeroutput>#define PC15_OSC32_OUT_Pin   GPIO_PIN_15</computeroutput></para>    </section><anchor xml:id="_main_8h_1af8885fc2f50640cd8bb5084cd998088b"/>    <section>
+    <title>PH0_OSC_IN_GPIO_Port</title>
+<indexterm><primary>PH0_OSC_IN_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>PH0_OSC_IN_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define PH0_OSC_IN_GPIO_Port   GPIOH</computeroutput></para>    </section><anchor xml:id="_main_8h_1addb0c037a01bd73baaf9f7d5a0379ac4"/>    <section>
+    <title>PH0_OSC_IN_Pin</title>
+<indexterm><primary>PH0_OSC_IN_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>PH0_OSC_IN_Pin</secondary></indexterm>
+<para><computeroutput>#define PH0_OSC_IN_Pin   GPIO_PIN_0</computeroutput></para>    </section><anchor xml:id="_main_8h_1a5b80653bbe01e9d4f334c74bdc5bc9f6"/>    <section>
+    <title>PH1_OSC_OUT_GPIO_Port</title>
+<indexterm><primary>PH1_OSC_OUT_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>PH1_OSC_OUT_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define PH1_OSC_OUT_GPIO_Port   GPIOH</computeroutput></para>    </section><anchor xml:id="_main_8h_1ac4d4c1fdbc6cd7491c705bd332f15693"/>    <section>
+    <title>PH1_OSC_OUT_Pin</title>
+<indexterm><primary>PH1_OSC_OUT_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>PH1_OSC_OUT_Pin</secondary></indexterm>
+<para><computeroutput>#define PH1_OSC_OUT_Pin   GPIO_PIN_1</computeroutput></para>    </section><anchor xml:id="_main_8h_1a54d419ccaa2653d1bceae3f1a7206890"/>    <section>
+    <title>SWCLK_GPIO_Port</title>
+<indexterm><primary>SWCLK_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>SWCLK_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define SWCLK_GPIO_Port   GPIOA</computeroutput></para>    </section><anchor xml:id="_main_8h_1ad2e9165c92edc48968db01ca88c27822"/>    <section>
+    <title>SWCLK_Pin</title>
+<indexterm><primary>SWCLK_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>SWCLK_Pin</secondary></indexterm>
+<para><computeroutput>#define SWCLK_Pin   GPIO_PIN_14</computeroutput></para>    </section><anchor xml:id="_main_8h_1a0d6c5c9d267a552e5bb02eb57498f683"/>    <section>
+    <title>SWDIO_GPIO_Port</title>
+<indexterm><primary>SWDIO_GPIO_Port</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>SWDIO_GPIO_Port</secondary></indexterm>
+<para><computeroutput>#define SWDIO_GPIO_Port   GPIOA</computeroutput></para>    </section><anchor xml:id="_main_8h_1ac30893c7c5dd78cf02632dc653c3e74e"/>    <section>
+    <title>SWDIO_Pin</title>
+<indexterm><primary>SWDIO_Pin</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>SWDIO_Pin</secondary></indexterm>
+<para><computeroutput>#define SWDIO_Pin   GPIO_PIN_13</computeroutput></para></section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_main_8h_1a1730ffe1e560465665eb47d9264826f9"/>    <section>
+    <title>Error_Handler()</title>
+<indexterm><primary>Error_Handler</primary><secondary>main.h</secondary></indexterm>
+<indexterm><primary>main.h</primary><secondary>Error_Handler</secondary></indexterm>
+<para><computeroutput>void Error_Handler (void )</computeroutput></para><para>
+
+<para>This function is executed in case of error occurrence. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Return values                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>None</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

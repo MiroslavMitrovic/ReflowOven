@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct_jump_struct" kind="struct" language="C++" prot="public">
+    <compoundname>JumpStruct</compoundname>
+    <includes refid="bootloader_8h" local="no">bootloader.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_jump_struct_1a5877aab5a6693adb815eacc13326c85a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t stack_addr</definition>
+        <argsstring></argsstring>
+        <name>stack_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="50" column="13" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="bootloader_8c_1a6a1be0d0c17af6c868a8e98bed1e1fde" compoundref="bootloader_8c" startline="211" endline="219">jumpToApp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_jump_struct_1a068b3d57387519e10bc727c093c3b783" prot="public" static="no" mutable="no">
+        <type><ref refid="bootloader_8h_1a9737ef58c9961a76fa18170f200acf98" kindref="member">application_t</ref> *</type>
+        <definition>application_t* func_p</definition>
+        <argsstring></argsstring>
+        <name>func_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="51" column="18" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="bootloader_8c_1a6a1be0d0c17af6c868a8e98bed1e1fde" compoundref="bootloader_8c" startline="211" endline="219">jumpToApp</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="48" column="1" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="49" bodyend="52"/>
+    <listofallmembers>
+      <member refid="struct_jump_struct_1a068b3d57387519e10bc727c093c3b783" prot="public" virt="non-virtual"><scope>JumpStruct</scope><name>func_p</name></member>
+      <member refid="struct_jump_struct_1a5877aab5a6693adb815eacc13326c85a" prot="public" virt="non-virtual"><scope>JumpStruct</scope><name>stack_addr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,604 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="bootloader_8h" kind="file" language="C++">
+    <compoundname>bootloader.h</compoundname>
+    <includes refid="main_8h" local="yes">main.h</includes>
+    <includes local="yes">usbd_cdc_if.h</includes>
+    <includes local="no">string.h</includes>
+    <includedby refid="main_8c" local="yes">C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>usbd_cdc_if.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h</label>
+        <link refid="bootloader_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h</label>
+        <link refid="bootloader_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_jump_struct" prot="public">JumpStruct</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="bootloader_8h_1af7a58be7d90a1c15032d1af89ced02bd" prot="public" static="no">
+        <name>APP1_START</name>
+        <initializer>(0x08020000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="11" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bootloader_8h_1a012c9c41cc682f3473bbec24dfacaba7" prot="public" static="no">
+        <name>APP2_START</name>
+        <initializer>(0x08040000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="12" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bootloader_8h_1ae9560b79ebc5c7d96bea3c0821a0373a" prot="public" static="no">
+        <name>FLASH_SECTOR_SIZE</name>
+        <initializer>(0x20000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="13" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bootloader_8h_1a6fe32b62c5ee2f8ab0108e0eec548756" prot="public" static="no">
+        <name>FLASH_SECTOR_SIZE_USER</name>
+        <initializer>(0x1A000)	/*104kB(APP+BL)*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="15" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bootloader_8h_1a0ac2c1290aa27c0f632ece372b0cfc1b" prot="public" static="no">
+        <name>ERASE_FLASH_MEMORY</name>
+        <initializer>&quot;#$ERASE_MEM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="17" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bootloader_8h_1a44417978e371a0136a1c5b5bf722545d" prot="public" static="no">
+        <name>FLASHING_START</name>
+        <initializer>&quot;#$FLASH_START&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="18" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bootloader_8h_1aa6eb6a08c9c98182cb204868c7c044a7" prot="public" static="no">
+        <name>FLASHING_FINISH</name>
+        <initializer>&quot;#$FLASH_FINISH&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="19" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bootloader_8h_1aa02715b6a9a50df6c7d5b2d510c9bc87" prot="public" static="no">
+        <name>FLASHING_ABORT</name>
+        <initializer>&quot;#$FLASH_ABORT&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="20" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="bootloader_8h_1a6510515f889d7d85b3c53d8b5be5b3a4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>BootloaderMode</name>
+        <enumvalue id="bootloader_8h_1a6510515f889d7d85b3c53d8b5be5b3a4ab7e37f5e1b63b6b47163af3f6bca3b63" prot="public">
+          <name>JumpMode</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bootloader_8h_1a6510515f889d7d85b3c53d8b5be5b3a4a25daa68c13bc0f959f4e281ebdd20e2f" prot="public">
+          <name>FlashMode</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="26" column="1" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="enum" id="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327" prot="public" static="no" strong="no">
+        <type></type>
+        <name>AppSelection</name>
+        <enumvalue id="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a2854ba324e126114646299240534cd29" prot="public">
+          <name>App1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a938e274fa621683342390249df560494" prot="public">
+          <name>App2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="32" column="1" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="enum" id="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FlashStatus</name>
+        <enumvalue id="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67ad47cff72e613e2580068361a3013fcfc" prot="public">
+          <name>Unerased</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a27354f8234d7fa5d8b43c94761f3b0b0" prot="public">
+          <name>Erased</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a7a581195d038372012532c1e5c284f29" prot="public">
+          <name>Unlocked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a5cd1fe9ec2bc94c5ff07770e3d069b5e" prot="public">
+          <name>Locked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="38" column="1" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="39" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="bootloader_8h_1a9737ef58c9961a76fa18170f200acf98" prot="public" static="no">
+        <type>void()</type>
+        <definition>typedef void() application_t(void)</definition>
+        <argsstring>(void)</argsstring>
+        <name>application_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="46" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="bootloader_8h_1ae211a0e6f6ca63031c8f9666d7f59757" prot="public" static="no" mutable="no">
+        <type><ref refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327" kindref="member">AppSelection</ref></type>
+        <definition>AppSelection App</definition>
+        <argsstring></argsstring>
+        <name>App</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="54" column="14" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="bootloader_8h_1a8a448f03b8a6548c36ba945fb6bb0051" compoundref="bootloader_8c" startline="104" endline="153">eraseMemory</referencedby>
+        <referencedby refid="bootloader_8h_1a36cd3c98d29aeb138ebfd35e6fbcf900" compoundref="bootloader_8c" startline="69" endline="96">flashWord</referencedby>
+        <referencedby refid="bootloader_8h_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f" compoundref="bootloader_8c" startline="155" endline="195">unlockFlashAndEraseMemory</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="bootloader_8h_1a500b78c8175e1d93ac82e212bf156372" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Flashed_offset</definition>
+        <argsstring></argsstring>
+        <name>Flashed_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="55" column="10" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="bootloader_8h_1a8a448f03b8a6548c36ba945fb6bb0051" compoundref="bootloader_8c" startline="104" endline="153">eraseMemory</referencedby>
+        <referencedby refid="bootloader_8h_1a36cd3c98d29aeb138ebfd35e6fbcf900" compoundref="bootloader_8c" startline="69" endline="96">flashWord</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" prot="public" static="no" mutable="no">
+        <type><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67" kindref="member">FlashStatus</ref></type>
+        <definition>FlashStatus flashStatus</definition>
+        <argsstring></argsstring>
+        <name>flashStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="56" column="13" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="bootloader_8h_1a8a448f03b8a6548c36ba945fb6bb0051" compoundref="bootloader_8c" startline="104" endline="153">eraseMemory</referencedby>
+        <referencedby refid="bootloader_8h_1aa587315089e36ab2c285275711fc5671" compoundref="bootloader_8c" startline="197" endline="209">lockFlash</referencedby>
+        <referencedby refid="bootloader_8h_1a0954d34b192341b6b3102a7f283e864b" compoundref="bootloader_8c" startline="300" endline="327">messageHandler</referencedby>
+        <referencedby refid="bootloader_8h_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f" compoundref="bootloader_8c" startline="155" endline="195">unlockFlashAndEraseMemory</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="bootloader_8h_1afe8a2d9e10b33d5e7906f9f04f95358e" prot="public" static="no" mutable="no">
+        <type>USBD_HandleTypeDef</type>
+        <definition>USBD_HandleTypeDef hUsbDeviceFS</definition>
+        <argsstring></argsstring>
+        <name>hUsbDeviceFS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="57" column="27" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" declline="57" declcolumn="27"/>
+        <referencedby refid="bootloader_8h_1abc0f16be0d136ae4392a954edb12cbe0" compoundref="bootloader_8c" startline="221" endline="240">deinitEverything</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bootloader_8h_1a2fd598a0b153c1c690e643d57ccdb75d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bootloaderInit</definition>
+        <argsstring>()</argsstring>
+        <name>bootloaderInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="59" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="11" bodyend="67" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" declline="59" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8h_1a36cd3c98d29aeb138ebfd35e6fbcf900" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void flashWord</definition>
+        <argsstring>(uint32_t word)</argsstring>
+        <name>flashWord</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>word</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="60" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="69" bodyend="96" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" declline="60" declcolumn="6"/>
+        <references refid="bootloader_8h_1ae211a0e6f6ca63031c8f9666d7f59757" compoundref="bootloader_8h" startline="54">App</references>
+        <references refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a2854ba324e126114646299240534cd29" compoundref="bootloader_8h" startline="34">App1</references>
+        <references refid="bootloader_8h_1af7a58be7d90a1c15032d1af89ced02bd" compoundref="bootloader_8h" startline="11">APP1_START</references>
+        <references refid="bootloader_8h_1a012c9c41cc682f3473bbec24dfacaba7" compoundref="bootloader_8h" startline="12">APP2_START</references>
+        <references refid="bootloader_8h_1a500b78c8175e1d93ac82e212bf156372" compoundref="bootloader_8h" startline="55">Flashed_offset</references>
+        <references refid="bootloader_8c_1a282446bae4a0f8cae076bec6aff91c5d" compoundref="bootloader_8c" startline="98" endline="102">readWord</references>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8h_1a282446bae4a0f8cae076bec6aff91c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t readWord</definition>
+        <argsstring>(uint32_t address)</argsstring>
+        <name>readWord</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="61" column="10" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="98" bodyend="102" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" declline="61" declcolumn="10"/>
+        <referencedby refid="bootloader_8h_1a36cd3c98d29aeb138ebfd35e6fbcf900" compoundref="bootloader_8c" startline="69" endline="96">flashWord</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8h_1a8a448f03b8a6548c36ba945fb6bb0051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eraseMemory</definition>
+        <argsstring>()</argsstring>
+        <name>eraseMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="62" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="104" bodyend="153" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" declline="62" declcolumn="6"/>
+        <references refid="bootloader_8h_1ae211a0e6f6ca63031c8f9666d7f59757" compoundref="bootloader_8h" startline="54">App</references>
+        <references refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a2854ba324e126114646299240534cd29" compoundref="bootloader_8h" startline="34">App1</references>
+        <references refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a27354f8234d7fa5d8b43c94761f3b0b0" compoundref="bootloader_8h" startline="41">Erased</references>
+        <references refid="bootloader_8c_1a253190cd1e1c1ca7068848f99fe79fe4" compoundref="bootloader_8c" startline="256" endline="298">errorBlink</references>
+        <references refid="bootloader_8h_1a500b78c8175e1d93ac82e212bf156372" compoundref="bootloader_8h" startline="55">Flashed_offset</references>
+        <references refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" compoundref="bootloader_8h" startline="56">flashStatus</references>
+        <referencedby refid="bootloader_8h_1a0954d34b192341b6b3102a7f283e864b" compoundref="bootloader_8c" startline="300" endline="327">messageHandler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8h_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void unlockFlashAndEraseMemory</definition>
+        <argsstring>()</argsstring>
+        <name>unlockFlashAndEraseMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="63" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="155" bodyend="195" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" declline="63" declcolumn="6"/>
+        <references refid="bootloader_8h_1ae211a0e6f6ca63031c8f9666d7f59757" compoundref="bootloader_8h" startline="54">App</references>
+        <references refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a2854ba324e126114646299240534cd29" compoundref="bootloader_8h" startline="34">App1</references>
+        <references refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a27354f8234d7fa5d8b43c94761f3b0b0" compoundref="bootloader_8h" startline="41">Erased</references>
+        <references refid="bootloader_8c_1a253190cd1e1c1ca7068848f99fe79fe4" compoundref="bootloader_8c" startline="256" endline="298">errorBlink</references>
+        <references refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" compoundref="bootloader_8h" startline="56">flashStatus</references>
+        <references refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a7a581195d038372012532c1e5c284f29" compoundref="bootloader_8h" startline="42">Unlocked</references>
+        <referencedby refid="bootloader_8h_1a0954d34b192341b6b3102a7f283e864b" compoundref="bootloader_8c" startline="300" endline="327">messageHandler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8h_1aa587315089e36ab2c285275711fc5671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lockFlash</definition>
+        <argsstring>()</argsstring>
+        <name>lockFlash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="64" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="197" bodyend="209" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" declline="64" declcolumn="6"/>
+        <references refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" compoundref="bootloader_8h" startline="56">flashStatus</references>
+        <references refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a5cd1fe9ec2bc94c5ff07770e3d069b5e" compoundref="bootloader_8h" startline="43">Locked</references>
+        <referencedby refid="bootloader_8h_1a0954d34b192341b6b3102a7f283e864b" compoundref="bootloader_8c" startline="300" endline="327">messageHandler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8h_1a1ac0dd897f22b1f895670c8b55a3338c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jumpToApp</definition>
+        <argsstring>()</argsstring>
+        <name>jumpToApp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="65" column="6" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" declline="65" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8h_1abc0f16be0d136ae4392a954edb12cbe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void deinitEverything</definition>
+        <argsstring>()</argsstring>
+        <name>deinitEverything</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="66" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="221" bodyend="240" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" declline="66" declcolumn="6"/>
+        <references refid="bootloader_8h_1afe8a2d9e10b33d5e7906f9f04f95358e">hUsbDeviceFS</references>
+        <references refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" compoundref="main_8h" startline="84">LD5_GPIO_Port</references>
+        <references refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" compoundref="main_8h" startline="83">LD5_Pin</references>
+        <references refid="main_8h_1a4154850b2c5b4cfc8bbdd4c3b5abd0eb" compoundref="main_8h" startline="86">LD6_GPIO_Port</references>
+        <references refid="main_8h_1af752fb7d74e778ecaf48784c6f2fa107" compoundref="main_8h" startline="85">LD6_Pin</references>
+        <referencedby refid="bootloader_8c_1a6a1be0d0c17af6c868a8e98bed1e1fde" compoundref="bootloader_8c" startline="211" endline="219">jumpToApp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8h_1af49ad198511728cf511d199556ad668d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t string_compare</definition>
+        <argsstring>(char array1[], char array2[], uint16_t length)</argsstring>
+        <name>string_compare</name>
+        <param>
+          <type>char</type>
+          <declname>array1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>array2</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="67" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="242" bodyend="254" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" declline="67" declcolumn="9"/>
+        <referencedby refid="bootloader_8h_1a0954d34b192341b6b3102a7f283e864b" compoundref="bootloader_8c" startline="300" endline="327">messageHandler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8h_1a253190cd1e1c1ca7068848f99fe79fe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void errorBlink</definition>
+        <argsstring>()</argsstring>
+        <name>errorBlink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="68" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="256" bodyend="298" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" declline="68" declcolumn="6"/>
+        <references refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" compoundref="main_8h" startline="84">LD5_GPIO_Port</references>
+        <references refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" compoundref="main_8h" startline="83">LD5_Pin</references>
+        <referencedby refid="bootloader_8h_1a8a448f03b8a6548c36ba945fb6bb0051" compoundref="bootloader_8c" startline="104" endline="153">eraseMemory</referencedby>
+        <referencedby refid="bootloader_8h_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f" compoundref="bootloader_8c" startline="155" endline="195">unlockFlashAndEraseMemory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8h_1a0954d34b192341b6b3102a7f283e864b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void messageHandler</definition>
+        <argsstring>(uint8_t *Buf)</argsstring>
+        <name>messageHandler</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>Buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" line="69" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="300" bodyend="327" declfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h" declline="69" declcolumn="6"/>
+        <references refid="bootloader_8h_1a0ac2c1290aa27c0f632ece372b0cfc1b" compoundref="bootloader_8h" startline="17">ERASE_FLASH_MEMORY</references>
+        <references refid="bootloader_8c_1a8a448f03b8a6548c36ba945fb6bb0051" compoundref="bootloader_8c" startline="104" endline="153">eraseMemory</references>
+        <references refid="bootloader_8h_1aa02715b6a9a50df6c7d5b2d510c9bc87" compoundref="bootloader_8h" startline="20">FLASHING_ABORT</references>
+        <references refid="bootloader_8h_1aa6eb6a08c9c98182cb204868c7c044a7" compoundref="bootloader_8h" startline="19">FLASHING_FINISH</references>
+        <references refid="bootloader_8h_1a44417978e371a0136a1c5b5bf722545d" compoundref="bootloader_8h" startline="18">FLASHING_START</references>
+        <references refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" compoundref="bootloader_8h" startline="56">flashStatus</references>
+        <references refid="bootloader_8c_1aa587315089e36ab2c285275711fc5671" compoundref="bootloader_8c" startline="197" endline="209">lockFlash</references>
+        <references refid="bootloader_8c_1af49ad198511728cf511d199556ad668d" compoundref="bootloader_8c" startline="242" endline="254">string_compare</references>
+        <references refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a7a581195d038372012532c1e5c284f29" compoundref="bootloader_8h" startline="42">Unlocked</references>
+        <references refid="bootloader_8c_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f" compoundref="bootloader_8c" startline="155" endline="195">unlockFlashAndEraseMemory</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>******************************************************************************</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>*<sp/>@file<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>bootloader.h</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>*<sp/>@brief<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Header<sp/>for<sp/>bootloader.h<sp/>file.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>******************************************************************************</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INC_BOOTLOADER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INC_BOOTLOADER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//TODO<sp/>Addresses<sp/>to<sp/>be<sp/>defined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="bootloader_8h_1af7a58be7d90a1c15032d1af89ced02bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>APP1_START<sp/>(0x08020000)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Sector<sp/>5<sp/>APP1<sp/>(72kB)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="bootloader_8h_1a012c9c41cc682f3473bbec24dfacaba7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>APP2_START<sp/>(0x08040000)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Sector<sp/>6<sp/><sp/>App2<sp/>Bank<sp/>(72kB)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="bootloader_8h_1ae9560b79ebc5c7d96bea3c0821a0373a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SECTOR_SIZE<sp/>(0x20000)<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//128kB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="bootloader_8h_1a6fe32b62c5ee2f8ab0108e0eec548756" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SECTOR_SIZE_USER<sp/>(0x1A000)<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*104kB(APP+BL)*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="bootloader_8h_1a0ac2c1290aa27c0f632ece372b0cfc1b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERASE_FLASH_MEMORY<sp/>&quot;#$ERASE_MEM&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="bootloader_8h_1a44417978e371a0136a1c5b5bf722545d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASHING_START<sp/>&quot;#$FLASH_START&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="bootloader_8h_1aa6eb6a08c9c98182cb204868c7c044a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASHING_FINISH<sp/>&quot;#$FLASH_FINISH&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="bootloader_8h_1aa02715b6a9a50df6c7d5b2d510c9bc87" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASHING_ABORT<sp/>&quot;#$FLASH_ABORT&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="main_8h" kindref="compound">main.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usbd_cdc_if.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="bootloader_8h_1a6510515f889d7d85b3c53d8b5be5b3a4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="bootloader_8h_1a6510515f889d7d85b3c53d8b5be5b3a4ab7e37f5e1b63b6b47163af3f6bca3b63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a6510515f889d7d85b3c53d8b5be5b3a4ab7e37f5e1b63b6b47163af3f6bca3b63" kindref="member">JumpMode</ref>,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a6510515f889d7d85b3c53d8b5be5b3a4a25daa68c13bc0f959f4e281ebdd20e2f" kindref="member">FlashMode</ref></highlight></codeline>
+<codeline lineno="30" refid="bootloader_8h_1a6510515f889d7d85b3c53d8b5be5b3a4a25daa68c13bc0f959f4e281ebdd20e2f" refkind="member"><highlight class="normal">}<sp/><ref refid="bootloader_8h_1a6510515f889d7d85b3c53d8b5be5b3a4" kindref="member">BootloaderMode</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34" refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a2854ba324e126114646299240534cd29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a2854ba324e126114646299240534cd29" kindref="member">App1</ref>,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a938e274fa621683342390249df560494" kindref="member">App2</ref></highlight></codeline>
+<codeline lineno="36" refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a938e274fa621683342390249df560494" refkind="member"><highlight class="normal">}<sp/><ref refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327" kindref="member">AppSelection</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40" refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67ad47cff72e613e2580068361a3013fcfc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67ad47cff72e613e2580068361a3013fcfc" kindref="member">Unerased</ref>,</highlight></codeline>
+<codeline lineno="41" refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a27354f8234d7fa5d8b43c94761f3b0b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a27354f8234d7fa5d8b43c94761f3b0b0" kindref="member">Erased</ref>,</highlight></codeline>
+<codeline lineno="42" refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a7a581195d038372012532c1e5c284f29" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a7a581195d038372012532c1e5c284f29" kindref="member">Unlocked</ref>,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a5cd1fe9ec2bc94c5ff07770e3d069b5e" kindref="member">Locked</ref></highlight></codeline>
+<codeline lineno="44" refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a5cd1fe9ec2bc94c5ff07770e3d069b5e" refkind="member"><highlight class="normal">}<sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67" kindref="member">FlashStatus</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="bootloader_8h_1a9737ef58c9961a76fa18170f200acf98" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(<ref refid="bootloader_8h_1a9737ef58c9961a76fa18170f200acf98" kindref="member">application_t</ref>)(void);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="struct_jump_struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50" refid="struct_jump_struct_1a5877aab5a6693adb815eacc13326c85a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_jump_struct_1a5877aab5a6693adb815eacc13326c85a" kindref="member">stack_addr</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Stack<sp/>Pointer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="struct_jump_struct_1a068b3d57387519e10bc727c093c3b783" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a9737ef58c9961a76fa18170f200acf98" kindref="member">application_t</ref>*<sp/><sp/><ref refid="struct_jump_struct_1a068b3d57387519e10bc727c093c3b783" kindref="member">func_p</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Program<sp/>Counter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}<sp/><ref refid="struct_jump_struct" kindref="compound">JumpStruct</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="bootloader_8h_1ae211a0e6f6ca63031c8f9666d7f59757" refkind="member"><highlight class="normal"><ref refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327" kindref="member">AppSelection</ref><sp/><ref refid="bootloader_8h_1ae211a0e6f6ca63031c8f9666d7f59757" kindref="member">App</ref>;</highlight></codeline>
+<codeline lineno="55" refid="bootloader_8h_1a500b78c8175e1d93ac82e212bf156372" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="bootloader_8h_1a500b78c8175e1d93ac82e212bf156372" kindref="member">Flashed_offset</ref>;</highlight></codeline>
+<codeline lineno="56" refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" refkind="member"><highlight class="normal"><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67" kindref="member">FlashStatus</ref><sp/><ref refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" kindref="member">flashStatus</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>USBD_HandleTypeDef<sp/><ref refid="bootloader_8h_1afe8a2d9e10b33d5e7906f9f04f95358e" kindref="member">hUsbDeviceFS</ref>;</highlight><highlight class="comment">//it<sp/>is<sp/>defined<sp/>in<sp/>the<sp/>usb_device.c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8h_1a2fd598a0b153c1c690e643d57ccdb75d" kindref="member">bootloaderInit</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8h_1a36cd3c98d29aeb138ebfd35e6fbcf900" kindref="member">flashWord</ref>(uint32_t<sp/>word);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">uint32_t<sp/><ref refid="bootloader_8h_1a282446bae4a0f8cae076bec6aff91c5d" kindref="member">readWord</ref>(uint32_t<sp/>address);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8h_1a8a448f03b8a6548c36ba945fb6bb0051" kindref="member">eraseMemory</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8h_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f" kindref="member">unlockFlashAndEraseMemory</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8h_1aa587315089e36ab2c285275711fc5671" kindref="member">lockFlash</ref>();</highlight></codeline>
+<codeline lineno="65" refid="bootloader_8h_1a1ac0dd897f22b1f895670c8b55a3338c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8h_1a1ac0dd897f22b1f895670c8b55a3338c" kindref="member">jumpToApp</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8h_1abc0f16be0d136ae4392a954edb12cbe0" kindref="member">deinitEverything</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">uint8_t<sp/><ref refid="bootloader_8h_1af49ad198511728cf511d199556ad668d" kindref="member">string_compare</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>array1[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>array2[],<sp/>uint16_t<sp/>length);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8h_1a253190cd1e1c1ca7068848f99fe79fe4" kindref="member">errorBlink</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8h_1a0954d34b192341b6b3102a7f283e864b" kindref="member">messageHandler</ref>(uint8_t*<sp/>Buf);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INC_BOOTLOADER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Inc/bootloader.h"/>
+  </compounddef>
+</doxygen>

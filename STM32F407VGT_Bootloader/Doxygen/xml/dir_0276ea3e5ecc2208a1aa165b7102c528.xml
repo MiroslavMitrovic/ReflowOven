@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_0276ea3e5ecc2208a1aa165b7102c528" kind="dir">
+    <compoundname>C:/Users/mmitr/STM32CubeIDE</compoundname>
+    <innerdir refid="dir_1e65d6df7fb598be586b79597aba7ecb">C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/mmitr/STM32CubeIDE/"/>
+  </compounddef>
+</doxygen>

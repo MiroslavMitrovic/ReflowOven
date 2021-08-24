@@ -1,0 +1,556 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="bootloader_8c" kind="file" language="C++">
+    <compoundname>bootloader.c</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bootloader_8c_1a2fd598a0b153c1c690e643d57ccdb75d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bootloaderInit</definition>
+        <argsstring>()</argsstring>
+        <name>bootloaderInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" line="11" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="11" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8c_1abcc7dd9140dbaa17b84ceb05f4602ae2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void flashWord</definition>
+        <argsstring>(uint32_t dataToFlash)</argsstring>
+        <name>flashWord</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>dataToFlash</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" line="69" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="69" bodyend="96"/>
+        <references refid="bootloader_8h_1ae211a0e6f6ca63031c8f9666d7f59757" compoundref="bootloader_8h" startline="54">App</references>
+        <references refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a2854ba324e126114646299240534cd29" compoundref="bootloader_8h" startline="34">App1</references>
+        <references refid="bootloader_8h_1af7a58be7d90a1c15032d1af89ced02bd" compoundref="bootloader_8h" startline="11">APP1_START</references>
+        <references refid="bootloader_8h_1a012c9c41cc682f3473bbec24dfacaba7" compoundref="bootloader_8h" startline="12">APP2_START</references>
+        <references refid="bootloader_8h_1a500b78c8175e1d93ac82e212bf156372" compoundref="bootloader_8h" startline="55">Flashed_offset</references>
+        <references refid="bootloader_8c_1a282446bae4a0f8cae076bec6aff91c5d" compoundref="bootloader_8c" startline="98" endline="102">readWord</references>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8c_1a282446bae4a0f8cae076bec6aff91c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t readWord</definition>
+        <argsstring>(uint32_t address)</argsstring>
+        <name>readWord</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" line="98" column="10" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="98" bodyend="102"/>
+        <referencedby refid="bootloader_8h_1a36cd3c98d29aeb138ebfd35e6fbcf900" compoundref="bootloader_8c" startline="69" endline="96">flashWord</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8c_1a8a448f03b8a6548c36ba945fb6bb0051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void eraseMemory</definition>
+        <argsstring>()</argsstring>
+        <name>eraseMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" line="104" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="104" bodyend="153"/>
+        <references refid="bootloader_8h_1ae211a0e6f6ca63031c8f9666d7f59757" compoundref="bootloader_8h" startline="54">App</references>
+        <references refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a2854ba324e126114646299240534cd29" compoundref="bootloader_8h" startline="34">App1</references>
+        <references refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a27354f8234d7fa5d8b43c94761f3b0b0" compoundref="bootloader_8h" startline="41">Erased</references>
+        <references refid="bootloader_8c_1a253190cd1e1c1ca7068848f99fe79fe4" compoundref="bootloader_8c" startline="256" endline="298">errorBlink</references>
+        <references refid="bootloader_8h_1a500b78c8175e1d93ac82e212bf156372" compoundref="bootloader_8h" startline="55">Flashed_offset</references>
+        <references refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" compoundref="bootloader_8h" startline="56">flashStatus</references>
+        <referencedby refid="bootloader_8h_1a0954d34b192341b6b3102a7f283e864b" compoundref="bootloader_8c" startline="300" endline="327">messageHandler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8c_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void unlockFlashAndEraseMemory</definition>
+        <argsstring>()</argsstring>
+        <name>unlockFlashAndEraseMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" line="155" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="155" bodyend="195"/>
+        <references refid="bootloader_8h_1ae211a0e6f6ca63031c8f9666d7f59757" compoundref="bootloader_8h" startline="54">App</references>
+        <references refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a2854ba324e126114646299240534cd29" compoundref="bootloader_8h" startline="34">App1</references>
+        <references refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a27354f8234d7fa5d8b43c94761f3b0b0" compoundref="bootloader_8h" startline="41">Erased</references>
+        <references refid="bootloader_8c_1a253190cd1e1c1ca7068848f99fe79fe4" compoundref="bootloader_8c" startline="256" endline="298">errorBlink</references>
+        <references refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" compoundref="bootloader_8h" startline="56">flashStatus</references>
+        <references refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a7a581195d038372012532c1e5c284f29" compoundref="bootloader_8h" startline="42">Unlocked</references>
+        <referencedby refid="bootloader_8h_1a0954d34b192341b6b3102a7f283e864b" compoundref="bootloader_8c" startline="300" endline="327">messageHandler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8c_1aa587315089e36ab2c285275711fc5671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lockFlash</definition>
+        <argsstring>()</argsstring>
+        <name>lockFlash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" line="197" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="197" bodyend="209"/>
+        <references refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" compoundref="bootloader_8h" startline="56">flashStatus</references>
+        <references refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a5cd1fe9ec2bc94c5ff07770e3d069b5e" compoundref="bootloader_8h" startline="43">Locked</references>
+        <referencedby refid="bootloader_8h_1a0954d34b192341b6b3102a7f283e864b" compoundref="bootloader_8c" startline="300" endline="327">messageHandler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8c_1a6a1be0d0c17af6c868a8e98bed1e1fde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jumpToApp</definition>
+        <argsstring>(const uint32_t address)</argsstring>
+        <name>jumpToApp</name>
+        <param>
+          <type>const uint32_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" line="211" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="211" bodyend="219"/>
+        <references refid="bootloader_8c_1abc0f16be0d136ae4392a954edb12cbe0" compoundref="bootloader_8c" startline="221" endline="240">deinitEverything</references>
+        <references refid="struct_jump_struct_1a068b3d57387519e10bc727c093c3b783" compoundref="bootloader_8h" startline="51">JumpStruct::func_p</references>
+        <references refid="struct_jump_struct_1a5877aab5a6693adb815eacc13326c85a" compoundref="bootloader_8h" startline="50">JumpStruct::stack_addr</references>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8c_1abc0f16be0d136ae4392a954edb12cbe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void deinitEverything</definition>
+        <argsstring>()</argsstring>
+        <name>deinitEverything</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" line="221" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="221" bodyend="240"/>
+        <references refid="bootloader_8h_1afe8a2d9e10b33d5e7906f9f04f95358e">hUsbDeviceFS</references>
+        <references refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" compoundref="main_8h" startline="84">LD5_GPIO_Port</references>
+        <references refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" compoundref="main_8h" startline="83">LD5_Pin</references>
+        <references refid="main_8h_1a4154850b2c5b4cfc8bbdd4c3b5abd0eb" compoundref="main_8h" startline="86">LD6_GPIO_Port</references>
+        <references refid="main_8h_1af752fb7d74e778ecaf48784c6f2fa107" compoundref="main_8h" startline="85">LD6_Pin</references>
+        <referencedby refid="bootloader_8c_1a6a1be0d0c17af6c868a8e98bed1e1fde" compoundref="bootloader_8c" startline="211" endline="219">jumpToApp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8c_1af49ad198511728cf511d199556ad668d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t string_compare</definition>
+        <argsstring>(char array1[], char array2[], uint16_t length)</argsstring>
+        <name>string_compare</name>
+        <param>
+          <type>char</type>
+          <declname>array1</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>array2</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" line="242" column="9" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="242" bodyend="254"/>
+        <referencedby refid="bootloader_8h_1a0954d34b192341b6b3102a7f283e864b" compoundref="bootloader_8c" startline="300" endline="327">messageHandler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8c_1a253190cd1e1c1ca7068848f99fe79fe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void errorBlink</definition>
+        <argsstring>()</argsstring>
+        <name>errorBlink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" line="256" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="256" bodyend="298"/>
+        <references refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" compoundref="main_8h" startline="84">LD5_GPIO_Port</references>
+        <references refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" compoundref="main_8h" startline="83">LD5_Pin</references>
+        <referencedby refid="bootloader_8h_1a8a448f03b8a6548c36ba945fb6bb0051" compoundref="bootloader_8c" startline="104" endline="153">eraseMemory</referencedby>
+        <referencedby refid="bootloader_8h_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f" compoundref="bootloader_8c" startline="155" endline="195">unlockFlashAndEraseMemory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="bootloader_8c_1a0954d34b192341b6b3102a7f283e864b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void messageHandler</definition>
+        <argsstring>(uint8_t *Buf)</argsstring>
+        <name>messageHandler</name>
+        <param>
+          <type>uint8_t *</type>
+          <declname>Buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" line="300" column="6" bodyfile="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c" bodystart="300" bodyend="327"/>
+        <references refid="bootloader_8h_1a0ac2c1290aa27c0f632ece372b0cfc1b" compoundref="bootloader_8h" startline="17">ERASE_FLASH_MEMORY</references>
+        <references refid="bootloader_8c_1a8a448f03b8a6548c36ba945fb6bb0051" compoundref="bootloader_8c" startline="104" endline="153">eraseMemory</references>
+        <references refid="bootloader_8h_1aa02715b6a9a50df6c7d5b2d510c9bc87" compoundref="bootloader_8h" startline="20">FLASHING_ABORT</references>
+        <references refid="bootloader_8h_1aa6eb6a08c9c98182cb204868c7c044a7" compoundref="bootloader_8h" startline="19">FLASHING_FINISH</references>
+        <references refid="bootloader_8h_1a44417978e371a0136a1c5b5bf722545d" compoundref="bootloader_8h" startline="18">FLASHING_START</references>
+        <references refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" compoundref="bootloader_8h" startline="56">flashStatus</references>
+        <references refid="bootloader_8c_1aa587315089e36ab2c285275711fc5671" compoundref="bootloader_8c" startline="197" endline="209">lockFlash</references>
+        <references refid="bootloader_8c_1af49ad198511728cf511d199556ad668d" compoundref="bootloader_8c" startline="242" endline="254">string_compare</references>
+        <references refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a7a581195d038372012532c1e5c284f29" compoundref="bootloader_8h" startline="42">Unlocked</references>
+        <references refid="bootloader_8c_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f" compoundref="bootloader_8c" startline="155" endline="195">unlockFlashAndEraseMemory</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">#include<sp/>&quot;bootloader.h&quot;</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11" refid="bootloader_8h_1a2fd598a0b153c1c690e643d57ccdb75d" refkind="member"><highlight class="comment">void<sp/>bootloaderInit()</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>Flashed_offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>flashStatus<sp/>=<sp/>Unerased;</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>BootloaderMode<sp/>bootloaderMode;</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(HAL_GPIO_ReadPin(BOOT1_GPIO_Port,<sp/>BOOT1_Pin)<sp/>==<sp/>GPIO_PIN_SET)</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bootloaderMode<sp/>=<sp/>FlashMode;</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>10;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(LD6_GPIO_Port,<sp/>LD6_Pin,<sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(10);</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(LD6_GPIO_Port,<sp/>LD6_Pin,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(90);</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(USB_ENABLE_GPIO_Port,<sp/>USB_ENABLE_Pin,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(LD3_GPIO_Port,<sp/>LD3_Pin,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>else</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bootloaderMode<sp/>=<sp/>JumpMode;</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(USB_ENABLE_GPIO_Port,<sp/>USB_ENABLE_Pin,<sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(LD3_GPIO_Port,<sp/>LD3_Pin,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(HAL_GPIO_ReadPin(App_GPIO_Port,<sp/>App_Pin)<sp/>==<sp/>GPIO_PIN_RESET)</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>=<sp/>App1;</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>else</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>App<sp/>=<sp/>App2;</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"></highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(bootloaderMode<sp/>==<sp/>JumpMode)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(App<sp/>==<sp/>App1)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//Check<sp/>if<sp/>the<sp/>application<sp/>is<sp/>there</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>emptyCellCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>10;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(readWord(APP1_START<sp/>+<sp/>(i<sp/>*<sp/>4))<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>emptyCellCount++;</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(emptyCellCount<sp/>!=<sp/>10)</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jumpToApp(APP1_START);</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errorBlink();</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//Check<sp/>if<sp/>the<sp/>application<sp/>is<sp/>there</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>emptyCellCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>10;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(readWord(APP2_START<sp/>+<sp/>(i<sp/>*<sp/>4))<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>emptyCellCount++;</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"></highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(emptyCellCount<sp/>!=<sp/>10)</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jumpToApp(APP2_START);</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>else</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errorBlink();</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"></highlight></codeline>
+<codeline lineno="69" refid="bootloader_8h_1a36cd3c98d29aeb138ebfd35e6fbcf900" refkind="member"><highlight class="comment">void<sp/>flashWord(uint32_t<sp/>dataToFlash)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/><sp/><sp/>/*TODO<sp/>Debug<sp/>and<sp/>check<sp/>functioning<sp/>of<sp/>write<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" kindref="member">flashStatus</ref><sp/>==<sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a7a581195d038372012532c1e5c284f29" kindref="member">Unlocked</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>HAL_StatusTypeDef<sp/>status;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>flash_attempt<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>address;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bootloader_8h_1ae211a0e6f6ca63031c8f9666d7f59757" kindref="member">App</ref><sp/>==<sp/><ref refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a2854ba324e126114646299240534cd29" kindref="member">App1</ref>)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>address<sp/>=<sp/><ref refid="bootloader_8h_1af7a58be7d90a1c15032d1af89ced02bd" kindref="member">APP1_START</ref><sp/>+<sp/><ref refid="bootloader_8h_1a500b78c8175e1d93ac82e212bf156372" kindref="member">Flashed_offset</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>address<sp/>=<sp/><ref refid="bootloader_8h_1a012c9c41cc682f3473bbec24dfacaba7" kindref="member">APP2_START</ref><sp/>+<sp/><ref refid="bootloader_8h_1a500b78c8175e1d93ac82e212bf156372" kindref="member">Flashed_offset</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD,<sp/>address,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataToFlash);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flash_attempt++;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/>HAL_OK<sp/>&amp;&amp;<sp/>flash_attempt<sp/>&lt;<sp/>10</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>dataToFlash<sp/>==<sp/><ref refid="bootloader_8c_1a282446bae4a0f8cae076bec6aff91c5d" kindref="member">readWord</ref>(address));</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status<sp/>!=<sp/>HAL_OK)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CDC_Transmit_FS((uint8_t*)<sp/>&amp;</highlight><highlight class="stringliteral">&quot;Flashing<sp/>Error!\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strlen(</highlight><highlight class="stringliteral">&quot;Flashing<sp/>Error!\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="comment">//Word<sp/>Flash<sp/>Successful</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a500b78c8175e1d93ac82e212bf156372" kindref="member">Flashed_offset</ref><sp/>+=<sp/>4;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CDC_Transmit_FS((uint8_t*)<sp/>&amp;</highlight><highlight class="stringliteral">&quot;Flash:<sp/>OK\n&quot;</highlight><highlight class="normal">,<sp/>strlen(</highlight><highlight class="stringliteral">&quot;Flash:<sp/>OK\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CDC_Transmit_FS((uint8_t*)<sp/>&amp;</highlight><highlight class="stringliteral">&quot;Error:<sp/>Memory<sp/>not<sp/>unlocked<sp/>nor<sp/>erased!\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strlen(</highlight><highlight class="stringliteral">&quot;Error:<sp/>Memory<sp/>not<sp/>unlocked<sp/>nor<sp/>erased!\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="bootloader_8h_1a282446bae4a0f8cae076bec6aff91c5d" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="bootloader_8c_1a282446bae4a0f8cae076bec6aff91c5d" kindref="member">readWord</ref>(uint32_t<sp/>address)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>read_data;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>read_data<sp/>=<sp/>*(uint32_t*)<sp/>(address);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>read_data;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="bootloader_8h_1a8a448f03b8a6548c36ba945fb6bb0051" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8c_1a8a448f03b8a6548c36ba945fb6bb0051" kindref="member">eraseMemory</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Unock<sp/>the<sp/>Flash<sp/>to<sp/>enable<sp/>the<sp/>flash<sp/>control<sp/>register<sp/>access<sp/>*************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_Unlock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_Lock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/></highlight><highlight class="comment">//Weird<sp/>fix<sp/>attempt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Allow<sp/>Access<sp/>to<sp/>option<sp/>bytes<sp/>sector<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_OB_Unlock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_OB_Lock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/></highlight><highlight class="comment">//Weird<sp/>fix<sp/>attempt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*TODO<sp/>To<sp/>be<sp/>modified<sp/>to<sp/>perform<sp/>erase<sp/>on<sp/>sectors,<sp/>see<sp/>FLASH_SECTOR.c<sp/>from<sp/>Reflow<sp/>Oven!*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fill<sp/>EraseInit<sp/>structure*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>FLASH_EraseInitTypeDef<sp/>EraseInitStruct;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>EraseInitStruct.TypeErase<sp/>=<sp/>FLASH_TYPEERASE_SECTORS;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>EraseInitStruct.VoltageRange<sp/>=<sp/>FLASH_VOLTAGE_RANGE_3;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bootloader_8h_1ae211a0e6f6ca63031c8f9666d7f59757" kindref="member">App</ref><sp/>==<sp/><ref refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a2854ba324e126114646299240534cd29" kindref="member">App1</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*hack<sp/>for<sp/>sector*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*EraseInitStruct.Sector<sp/>=<sp/>APP1_START;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*hack<sp/>for<sp/>sector*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EraseInitStruct.Sector<sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*EraseInitStruct.Sector<sp/>=<sp/>APP2_START;/*</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*hack<sp/>for<sp/>sector*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EraseInitStruct.Sector<sp/>=<sp/>6;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*EraseInitStruct.NbSectors<sp/>=<sp/>FLASH_SECTOR_SIZE/FLASH_SECTOR_SIZE_USER;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*hack<sp/>for<sp/>sector*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>EraseInitStruct.NbSectors<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>SectorError;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>HAL_StatusTypeDef<sp/>status_erase;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>status_erase<sp/>=<sp/>HAL_FLASHEx_Erase(&amp;EraseInitStruct,<sp/>&amp;SectorError);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Lock<sp/>the<sp/>Flash<sp/>to<sp/>enable<sp/>the<sp/>flash<sp/>control<sp/>register<sp/>access<sp/>*************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_Lock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_Unlock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/></highlight><highlight class="comment">//Weird<sp/>fix<sp/>attempt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Lock<sp/>Access<sp/>to<sp/>option<sp/>bytes<sp/>sector<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_OB_Lock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_OB_Unlock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/></highlight><highlight class="comment">//Weird<sp/>fix<sp/>attempt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status_erase<sp/>!=<sp/>HAL_OK)<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bootloader_8c_1a253190cd1e1c1ca7068848f99fe79fe4" kindref="member">errorBlink</ref>();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" kindref="member">flashStatus</ref><sp/>=<sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a27354f8234d7fa5d8b43c94761f3b0b0" kindref="member">Erased</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a500b78c8175e1d93ac82e212bf156372" kindref="member">Flashed_offset</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="bootloader_8h_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8c_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f" kindref="member">unlockFlashAndEraseMemory</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Unock<sp/>the<sp/>Flash<sp/>to<sp/>enable<sp/>the<sp/>flash<sp/>control<sp/>register<sp/>access<sp/>*************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_Unlock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_Lock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/></highlight><highlight class="comment">//Weird<sp/>fix<sp/>attempt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Allow<sp/>Access<sp/>to<sp/>option<sp/>bytes<sp/>sector<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_OB_Unlock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_OB_Lock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/></highlight><highlight class="comment">//Weird<sp/>fix<sp/>attempt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">//TODO<sp/>Flash<sp/>erase<sp/>sector<sp/>instead<sp/>of<sp/>pages</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" kindref="member">flashStatus</ref><sp/>!=<sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a27354f8234d7fa5d8b43c94761f3b0b0" kindref="member">Erased</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Fill<sp/>EraseInit<sp/>structure*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FLASH_EraseInitTypeDef<sp/>EraseInitStruct;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//EraseInitStruct.TypeErase<sp/>=<sp/>FLASH_TYPEERASE_PAGES;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//FLASH_TYPEERASE_SECTORS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EraseInitStruct.TypeErase<sp/>=<sp/>FLASH_TYPEERASE_SECTORS;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EraseInitStruct.VoltageRange<sp/>=<sp/>FLASH_VOLTAGE_RANGE_3;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bootloader_8h_1ae211a0e6f6ca63031c8f9666d7f59757" kindref="member">App</ref><sp/>==<sp/><ref refid="bootloader_8h_1a4333fb5769348cfecdaf35c3d94cf327a2854ba324e126114646299240534cd29" kindref="member">App1</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*EraseInitStruct.Sector<sp/>=<sp/>APP1_START;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*hack<sp/>for<sp/>sector*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EraseInitStruct.Sector<sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*EraseInitStruct.Sector<sp/>=<sp/>APP2_START;/*</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*hack<sp/>for<sp/>sector*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EraseInitStruct.Sector<sp/>=<sp/>6;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*EraseInitStruct.NbSectors<sp/>=<sp/>FLASH_SECTOR_SIZE/FLASH_SECTOR_SIZE_USER;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*hack<sp/>for<sp/>sector*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EraseInitStruct.NbSectors<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>SectorError;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>HAL_StatusTypeDef<sp/>status_erase;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status_erase<sp/>=<sp/>HAL_FLASHEx_Erase(&amp;EraseInitStruct,<sp/>&amp;SectorError);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status_erase<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bootloader_8c_1a253190cd1e1c1ca7068848f99fe79fe4" kindref="member">errorBlink</ref>();</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" kindref="member">flashStatus</ref><sp/>=<sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a7a581195d038372012532c1e5c284f29" kindref="member">Unlocked</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="bootloader_8h_1aa587315089e36ab2c285275711fc5671" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8c_1aa587315089e36ab2c285275711fc5671" kindref="member">lockFlash</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Lock<sp/>the<sp/>Flash<sp/>to<sp/>enable<sp/>the<sp/>flash<sp/>control<sp/>register<sp/>access<sp/>*************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_Lock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_Unlock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Weird<sp/>fix<sp/>attempt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Lock<sp/>Access<sp/>to<sp/>option<sp/>bytes<sp/>sector<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_OB_Lock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(HAL_FLASH_OB_Unlock()<sp/>!=<sp/>HAL_OK)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Weird<sp/>fix<sp/>attempt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" kindref="member">flashStatus</ref><sp/>=<sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a5cd1fe9ec2bc94c5ff07770e3d069b5e" kindref="member">Locked</ref>;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="bootloader_8c_1a6a1be0d0c17af6c868a8e98bed1e1fde" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8c_1a6a1be0d0c17af6c868a8e98bed1e1fde" kindref="member">jumpToApp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>address)<sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_jump_struct" kindref="compound">JumpStruct</ref><sp/>*vector_p<sp/>=<sp/>(<ref refid="struct_jump_struct" kindref="compound">JumpStruct</ref>*)<sp/>address;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bootloader_8c_1abc0f16be0d136ae4392a954edb12cbe0" kindref="member">deinitEverything</ref>();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>let&apos;s<sp/>do<sp/>The<sp/>Jump!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Jump,<sp/>used<sp/>asm<sp/>to<sp/>avoid<sp/>stack<sp/>optimization<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">asm</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;msr<sp/>msp,<sp/>%0;<sp/>bx<sp/>%1;&quot;</highlight><highlight class="normal"><sp/>:<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">(vector_p-&gt;<ref refid="struct_jump_struct_1a5877aab5a6693adb815eacc13326c85a" kindref="member">stack_addr</ref>),<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">(vector_p-&gt;<ref refid="struct_jump_struct_1a068b3d57387519e10bc727c093c3b783" kindref="member">func_p</ref>));</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221" refid="bootloader_8h_1abc0f16be0d136ae4392a954edb12cbe0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8c_1abc0f16be0d136ae4392a954edb12cbe0" kindref="member">deinitEverything</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*TODO<sp/>add<sp/>all<sp/>the<sp/>peripherals<sp/>and<sp/>deinit<sp/>them-check<sp/>to<sp/>be<sp/>performed<sp/>to<sp/>see<sp/>if<sp/>this<sp/>is<sp/>working!!!*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//--<sp/>reset<sp/>peripherals<sp/>to<sp/>guarantee<sp/>flawless<sp/>start<sp/>of<sp/>user<sp/>application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_DeInit(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_DeInit(<ref refid="main_8h_1a4154850b2c5b4cfc8bbdd4c3b5abd0eb" kindref="member">LD6_GPIO_Port</ref>,<sp/><ref refid="main_8h_1af752fb7d74e778ecaf48784c6f2fa107" kindref="member">LD6_Pin</ref>);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>USBD_DeInit(&amp;<ref refid="bootloader_8h_1afe8a2d9e10b33d5e7906f9f04f95358e" kindref="member">hUsbDeviceFS</ref>);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_GPIOC_CLK_DISABLE();</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_GPIOD_CLK_DISABLE();</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_GPIOB_CLK_DISABLE();</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_GPIOA_CLK_DISABLE();</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_GPIOE_CLK_DISABLE();</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>__HAL_RCC_GPIOH_CLK_ENABLE();</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_RCC_DeInit();</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_DeInit();</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>SysTick-&gt;CTRL<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>SysTick-&gt;LOAD<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>SysTick-&gt;VAL<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="bootloader_8h_1af49ad198511728cf511d199556ad668d" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="bootloader_8c_1af49ad198511728cf511d199556ad668d" kindref="member">string_compare</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>array1[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>array2[],<sp/>uint16_t<sp/>length)<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>comVAR<sp/>=<sp/>0,<sp/>i;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>length;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(array1[i]<sp/>==<sp/>array2[i])</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>comVAR++;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>comVAR<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(comVAR<sp/>==<sp/>length)</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256" refid="bootloader_8h_1a253190cd1e1c1ca7068848f99fe79fe4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8c_1a253190cd1e1c1ca7068848f99fe79fe4" kindref="member">errorBlink</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(200);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(200);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(200);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(200);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(200);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(500);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(800);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(500);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(800);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(500);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(800);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(500);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(200);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(200);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(200);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(200);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_RESET);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(200);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_GPIO_WritePin(<ref refid="main_8h_1a58b48323bdbf7421c8d6e9e3e050ebad" kindref="member">LD5_GPIO_Port</ref>,<sp/><ref refid="main_8h_1aee7b888dd4dbc9a801963f319ed98b11" kindref="member">LD5_Pin</ref>,<sp/>GPIO_PIN_SET);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HAL_Delay(3000);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="bootloader_8h_1a0954d34b192341b6b3102a7f283e864b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bootloader_8c_1a0954d34b192341b6b3102a7f283e864b" kindref="member">messageHandler</ref>(uint8_t<sp/>*Buf)<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bootloader_8c_1af49ad198511728cf511d199556ad668d" kindref="member">string_compare</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>Buf,<sp/><ref refid="bootloader_8h_1a0ac2c1290aa27c0f632ece372b0cfc1b" kindref="member">ERASE_FLASH_MEMORY</ref>,</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strlen(<ref refid="bootloader_8h_1a0ac2c1290aa27c0f632ece372b0cfc1b" kindref="member">ERASE_FLASH_MEMORY</ref>))<sp/>&amp;&amp;<sp/><ref refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" kindref="member">flashStatus</ref><sp/>!=<sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a7a581195d038372012532c1e5c284f29" kindref="member">Unlocked</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bootloader_8c_1a8a448f03b8a6548c36ba945fb6bb0051" kindref="member">eraseMemory</ref>();</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CDC_Transmit_FS((uint8_t*)<sp/>&amp;</highlight><highlight class="stringliteral">&quot;Flash:<sp/>Erased!\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strlen(</highlight><highlight class="stringliteral">&quot;Flash:<sp/>Erased!\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bootloader_8c_1af49ad198511728cf511d199556ad668d" kindref="member">string_compare</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>Buf,<sp/><ref refid="bootloader_8h_1a44417978e371a0136a1c5b5bf722545d" kindref="member">FLASHING_START</ref>,</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strlen(<ref refid="bootloader_8h_1a44417978e371a0136a1c5b5bf722545d" kindref="member">FLASHING_START</ref>)))<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bootloader_8c_1aa5adb688bdfbc2c4c0540f6a5b4b7f5f" kindref="member">unlockFlashAndEraseMemory</ref>();</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CDC_Transmit_FS((uint8_t*)<sp/>&amp;</highlight><highlight class="stringliteral">&quot;Flash:<sp/>Unlocked!\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strlen(</highlight><highlight class="stringliteral">&quot;Flash:<sp/>Unlocked!\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bootloader_8c_1af49ad198511728cf511d199556ad668d" kindref="member">string_compare</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>Buf,<sp/><ref refid="bootloader_8h_1aa6eb6a08c9c98182cb204868c7c044a7" kindref="member">FLASHING_FINISH</ref>,</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strlen(<ref refid="bootloader_8h_1aa6eb6a08c9c98182cb204868c7c044a7" kindref="member">FLASHING_FINISH</ref>))<sp/>&amp;&amp;<sp/><ref refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" kindref="member">flashStatus</ref><sp/>==<sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a7a581195d038372012532c1e5c284f29" kindref="member">Unlocked</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bootloader_8c_1aa587315089e36ab2c285275711fc5671" kindref="member">lockFlash</ref>();</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CDC_Transmit_FS((uint8_t*)<sp/>&amp;</highlight><highlight class="stringliteral">&quot;Flash:<sp/>Success!\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strlen(</highlight><highlight class="stringliteral">&quot;Flash:<sp/>Success!\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="bootloader_8c_1af49ad198511728cf511d199556ad668d" kindref="member">string_compare</ref>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<sp/>Buf,<sp/><ref refid="bootloader_8h_1aa02715b6a9a50df6c7d5b2d510c9bc87" kindref="member">FLASHING_ABORT</ref>,</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strlen(<ref refid="bootloader_8h_1aa02715b6a9a50df6c7d5b2d510c9bc87" kindref="member">FLASHING_ABORT</ref>))<sp/>&amp;&amp;<sp/><ref refid="bootloader_8h_1a291d1b14c76824df2a443c7765ef1379" kindref="member">flashStatus</ref><sp/>==<sp/><ref refid="bootloader_8h_1a6f0b6c8816464b25c36056d8c842fd67a7a581195d038372012532c1e5c284f29" kindref="member">Unlocked</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bootloader_8c_1aa587315089e36ab2c285275711fc5671" kindref="member">lockFlash</ref>();</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bootloader_8c_1a8a448f03b8a6548c36ba945fb6bb0051" kindref="member">eraseMemory</ref>();</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CDC_Transmit_FS((uint8_t*)<sp/>&amp;</highlight><highlight class="stringliteral">&quot;Flash:<sp/>Aborted!\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strlen(</highlight><highlight class="stringliteral">&quot;Flash:<sp/>Aborted!\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CDC_Transmit_FS(</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(uint8_t*)<sp/>&amp;</highlight><highlight class="stringliteral">&quot;Error:<sp/>Incorrect<sp/>step<sp/>or<sp/>unknown<sp/>command!\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strlen(</highlight><highlight class="stringliteral">&quot;Error:<sp/>Incorrect<sp/>step<sp/>or<sp/>unknown<sp/>command!\n&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/mmitr/STM32CubeIDE/workspace_1.6.0/STM32F407VGT_Bootloader/Core/Src/bootloader.c"/>
+  </compounddef>
+</doxygen>
