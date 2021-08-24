@@ -68,22 +68,16 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define PC14_OSC32_IN_CLOCK_OSC_Pin GPIO_PIN_14
-#define PC14_OSC32_IN_CLOCK_OSC_GPIO_Port GPIOC
-#define PC15_OSC32_OUT_OUT_CLOCK_OSC_Pin GPIO_PIN_15
-#define PC15_OSC32_OUT_OUT_CLOCK_OSC_GPIO_Port GPIOC
-#define PH0_OSC_IN_8MHz_Pin GPIO_PIN_0
-#define PH0_OSC_IN_8MHz_GPIO_Port GPIOH
-#define PH1_OSC_OUT_8MHz_Pin GPIO_PIN_1
-#define PH1_OSC_OUT_8MHz_GPIO_Port GPIOH
-#define OTG_FS_PowerSwitchOn_Pin GPIO_PIN_0
-#define OTG_FS_PowerSwitchOn_GPIO_Port GPIOC
+#define PC14_OSC32_IN_Pin GPIO_PIN_14
+#define PC14_OSC32_IN_GPIO_Port GPIOC
+#define PC15_OSC32_OUT_Pin GPIO_PIN_15
+#define PC15_OSC32_OUT_GPIO_Port GPIOC
+#define PH0_OSC_IN_Pin GPIO_PIN_0
+#define PH0_OSC_IN_GPIO_Port GPIOH
+#define PH1_OSC_OUT_Pin GPIO_PIN_1
+#define PH1_OSC_OUT_GPIO_Port GPIOH
 #define B1_Pin GPIO_PIN_0
 #define B1_GPIO_Port GPIOA
-#define ADC1_NC_Pin GPIO_PIN_1
-#define ADC1_NC_GPIO_Port GPIOA
-#define ADC2_NC_Pin GPIO_PIN_2
-#define ADC2_NC_GPIO_Port GPIOA
 #define SPI1_CS_Pin GPIO_PIN_4
 #define SPI1_CS_GPIO_Port GPIOA
 #define SPI1_SCK_Pin GPIO_PIN_5
@@ -125,14 +119,6 @@ void Error_Handler(void);
 #define FiringPinBank1_GPIO_Port GPIOC
 #define FiringPinBank2_Pin GPIO_PIN_8
 #define FiringPinBank2_GPIO_Port GPIOC
-#define VBUS_FS_Pin GPIO_PIN_9
-#define VBUS_FS_GPIO_Port GPIOA
-#define OTG_FS_ID_Pin GPIO_PIN_10
-#define OTG_FS_ID_GPIO_Port GPIOA
-#define OTG_FS_DM_Pin GPIO_PIN_11
-#define OTG_FS_DM_GPIO_Port GPIOA
-#define OTG_FS_DP_Pin GPIO_PIN_12
-#define OTG_FS_DP_GPIO_Port GPIOA
 #define SYS_JTMS_SWDIO_Pin GPIO_PIN_13
 #define SYS_JTMS_SWDIO_GPIO_Port GPIOA
 #define SWCLK_Pin GPIO_PIN_14

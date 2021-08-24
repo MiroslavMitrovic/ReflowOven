@@ -19,7 +19,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "usb_device.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -114,8 +113,6 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-ADC_HandleTypeDef hadc1;
-
 SPI_HandleTypeDef hspi1;
 
 TIM_HandleTypeDef htim1;
@@ -127,6 +124,7 @@ UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 ReflowTemplate ReflowParameters;
+uint8_t * p_ReflowParameters;
 ReflowTemplate ReflowParametersRead;
 arm_pid_instance_f32 PID;
 extern uint8_t UART_Recieved_Data[5];
@@ -156,7 +154,6 @@ static void MX_SPI1_Init(void);
 static void MX_TIM5_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
-static void MX_ADC1_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_TIM3_Init(void);
 /* USER CODE BEGIN PFP */
@@ -229,8 +226,21 @@ extern FLAGS Flags; //Flags for status
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  setReflowParameters();
-  LoadParameters();
+
+
+  /* if memory for Reflow parameters is OK check, if not write default values from  setReflowParameters using SaveParameters*/
+  p_ReflowParameters=0x080A0000;
+  if(	(*p_ReflowParameters) == 0xFF	)
+	{
+		setReflowParameters();
+		SaveParameters();
+	}
+	else
+	{
+		 LoadParameters();
+	}
+
+
   PID.Kp = ReflowParameters.KP;
   PID.Ki = ReflowParameters.Ki;
   PID.Kd = ReflowParameters.KD;
@@ -251,37 +261,21 @@ extern FLAGS Flags; //Flags for status
   MX_TIM5_Init();
   MX_TIM1_Init();
   MX_TIM2_Init();
-  MX_ADC1_Init();
   MX_USART1_UART_Init();
   MX_TIM3_Init();
-  MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
 
 	void sendToNum(char *obj,uint16_t value);
+
 	HAL_TIM_Base_Start_IT(&htim5);
 	HAL_TIM_Base_Start_IT(&htim2);
-	//Init values for PWM duty cycle
-	TIM3->CCR2=200;
-	TIM3->CCR3=450;
+	/*Init values for PWM duty cycle*/
+//TIM3->CCR2=900;
+//	TIM3->CCR3=900;
+	  //
 
 
-
-	//PWM for FAN
-	//  while(CH3_DC < 2999)
-	//  	{
-	//  	    TIM4->CCR1 = CH3_DC;
-	//  	    CH3_DC += 10;
-	//  	    HAL_Delay(1);
-	//  	}
-	//  	while(CH3_DC > 0)
-	//  	{
-	//  		TIM4->CCR1 = CH3_DC;
-	//  	    CH3_DC -= 10;
-	//  	    HAL_Delay(1);
-	//  	}
-
-	//HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 	HAL_Delay(2000);
 	HAL_UART_Receive_IT(&huart1, UART_Recieved_Data, 5);
 	sprintf(ConsoleMSG,"IDLE");
@@ -292,6 +286,7 @@ extern FLAGS Flags; //Flags for status
 	HAL_UART_Receive_IT(&huart1, UART_Recieved_Data, 5);
 	HAL_Delay(100);
 	volatile uint32_t counter_us_delay=0;
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -301,6 +296,7 @@ extern FLAGS Flags; //Flags for status
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+		//sing(2);
 		counter_us_delay++;
 		 boolflag=__HAL_GPIO_EXTI_GET_FLAG(ZeroCrossingPin_Pin);
 		 HandleGui();
@@ -309,13 +305,14 @@ extern FLAGS Flags; //Flags for status
 		 HAL_Delay(1);
 		 //melody for finished procedure
 		 if(	(TRUE==Flags.cooldownComplete) &&	(Finish==State)	)
-		 {
+		  {
 			 if(0==songFlag)
 			 {
 			 sing(2);
+			// buzz(4800,5000);
 			 songFlag=1;
 			 }
-			 else
+			else
 			 {
 				 //do nothing
 			 }
@@ -382,56 +379,6 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-}
-
-/**
-  * @brief ADC1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_ADC1_Init(void)
-{
-
-  /* USER CODE BEGIN ADC1_Init 0 */
-
-  /* USER CODE END ADC1_Init 0 */
-
-  ADC_ChannelConfTypeDef sConfig = {0};
-
-  /* USER CODE BEGIN ADC1_Init 1 */
-
-  /* USER CODE END ADC1_Init 1 */
-  /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
-  */
-  hadc1.Instance = ADC1;
-  hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV2;
-  hadc1.Init.Resolution = ADC_RESOLUTION_12B;
-  hadc1.Init.ScanConvMode = DISABLE;
-  hadc1.Init.ContinuousConvMode = DISABLE;
-  hadc1.Init.DiscontinuousConvMode = DISABLE;
-  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
-  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
-  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-  hadc1.Init.NbrOfConversion = 1;
-  hadc1.Init.DMAContinuousRequests = DISABLE;
-  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
-  if (HAL_ADC_Init(&hadc1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_1;
-  sConfig.Rank = 1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN ADC1_Init 2 */
-
-  /* USER CODE END ADC1_Init 2 */
-
 }
 
 /**
@@ -726,9 +673,6 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(OTG_FS_PowerSwitchOn_GPIO_Port, OTG_FS_PowerSwitchOn_Pin, GPIO_PIN_SET);
-
-  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(SPI1_CS_GPIO_Port, SPI1_CS_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
@@ -740,13 +684,6 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(BuzzerPin_GPIO_Port, BuzzerPin_Pin, GPIO_PIN_SET);
-
-  /*Configure GPIO pin : OTG_FS_PowerSwitchOn_Pin */
-  GPIO_InitStruct.Pin = OTG_FS_PowerSwitchOn_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(OTG_FS_PowerSwitchOn_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -797,7 +734,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin : ZeroCrossingPin_Pin */
   GPIO_InitStruct.Pin = ZeroCrossingPin_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(ZeroCrossingPin_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : OTG_FS_OverCurrent_Pin */
@@ -814,8 +751,8 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(BuzzerPin_GPIO_Port, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
-  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
-//  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 1);
+ // HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
 }
 

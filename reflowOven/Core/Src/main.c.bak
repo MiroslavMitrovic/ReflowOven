@@ -19,7 +19,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "usb_device.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -127,6 +126,7 @@ UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 ReflowTemplate ReflowParameters;
+uint8_t * p_ReflowParameters;
 ReflowTemplate ReflowParametersRead;
 arm_pid_instance_f32 PID;
 extern uint8_t UART_Recieved_Data[5];
@@ -229,8 +229,21 @@ extern FLAGS Flags; //Flags for status
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  setReflowParameters();
-  LoadParameters();
+
+
+  /* if memory for Reflow parameters is OK check, if not write default values from  setReflowParameters using SaveParameters*/
+  p_ReflowParameters=0x080A0000;
+  if(	(*p_ReflowParameters) == 0xFF	)
+	{
+		setReflowParameters();
+		SaveParameters();
+	}
+	else
+	{
+		 LoadParameters();
+	}
+
+
   PID.Kp = ReflowParameters.KP;
   PID.Ki = ReflowParameters.Ki;
   PID.Kd = ReflowParameters.KD;
@@ -254,34 +267,18 @@ extern FLAGS Flags; //Flags for status
   MX_ADC1_Init();
   MX_USART1_UART_Init();
   MX_TIM3_Init();
-  MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
 
 	void sendToNum(char *obj,uint16_t value);
 	HAL_TIM_Base_Start_IT(&htim5);
 	HAL_TIM_Base_Start_IT(&htim2);
-	//Init values for PWM duty cycle
+	/*Init values for PWM duty cycle*/
 	TIM3->CCR2=200;
 	TIM3->CCR3=450;
 
 
 
-	//PWM for FAN
-	//  while(CH3_DC < 2999)
-	//  	{
-	//  	    TIM4->CCR1 = CH3_DC;
-	//  	    CH3_DC += 10;
-	//  	    HAL_Delay(1);
-	//  	}
-	//  	while(CH3_DC > 0)
-	//  	{
-	//  		TIM4->CCR1 = CH3_DC;
-	//  	    CH3_DC -= 10;
-	//  	    HAL_Delay(1);
-	//  	}
-
-	//HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 	HAL_Delay(2000);
 	HAL_UART_Receive_IT(&huart1, UART_Recieved_Data, 5);
 	sprintf(ConsoleMSG,"IDLE");
@@ -362,7 +359,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = 4;
-  RCC_OscInitStruct.PLL.PLLN = 120;
+  RCC_OscInitStruct.PLL.PLLN = 60;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 5;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
@@ -374,7 +371,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV2;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
@@ -800,6 +797,20 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(ZeroCrossingPin_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : VBUS_FS_Pin */
+  GPIO_InitStruct.Pin = VBUS_FS_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(VBUS_FS_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : OTG_FS_ID_Pin OTG_FS_DM_Pin OTG_FS_DP_Pin */
+  GPIO_InitStruct.Pin = OTG_FS_ID_Pin|OTG_FS_DM_Pin|OTG_FS_DP_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Alternate = GPIO_AF10_OTG_FS;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
   /*Configure GPIO pin : OTG_FS_OverCurrent_Pin */
   GPIO_InitStruct.Pin = OTG_FS_OverCurrent_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
@@ -815,7 +826,7 @@ static void MX_GPIO_Init(void)
 
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+  //HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
 }
 

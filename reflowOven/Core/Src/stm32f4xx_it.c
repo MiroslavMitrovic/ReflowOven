@@ -85,7 +85,6 @@ uint32_t PidCorrLim;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-extern PCD_HandleTypeDef hpcd_USB_OTG_FS;
 extern TIM_HandleTypeDef htim1;
 extern TIM_HandleTypeDef htim2;
 extern TIM_HandleTypeDef htim5;
@@ -252,15 +251,16 @@ void EXTI9_5_IRQHandler(void)
 	else
 	{
 		//Do nothing
-		//	FlagBank1=0;
-		//HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_2);
-		//HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_3);
+			FlagBank1=0;
+		HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_2);
+		HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_3);
 	}
 
 
   /* USER CODE END EXTI9_5_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_6);
   /* USER CODE BEGIN EXTI9_5_IRQn 1 */
+
 
   /* USER CODE END EXTI9_5_IRQn 1 */
 }
@@ -427,8 +427,9 @@ void TIM2_IRQHandler(void)
 			if(ReflowIndex == PhaseIndex[4])
 			{
 				HAL_NVIC_DisableIRQ(EXTI9_5_IRQn);
-				HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_2);
 				HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_3);
+				HAL_TIM_PWM_Stop(&htim3, TIM_CHANNEL_2);
+
 				HAL_GPIO_WritePin(LD5_GPIO_Port, LD5_Pin,GPIO_PIN_RESET);
 				sprintf(ConsoleMSG,"COOL DOWN");
 				Flags.reflowComplete=TRUE;
@@ -502,21 +503,10 @@ void TIM5_IRQHandler(void)
   /* USER CODE END TIM5_IRQn 1 */
 }
 
-/**
-  * @brief This function handles USB On The Go FS global interrupt.
-  */
-void OTG_FS_IRQHandler(void)
-{
-  /* USER CODE BEGIN OTG_FS_IRQn 0 */
-
-  /* USER CODE END OTG_FS_IRQn 0 */
-  HAL_PCD_IRQHandler(&hpcd_USB_OTG_FS);
-  /* USER CODE BEGIN OTG_FS_IRQn 1 */
-
-  /* USER CODE END OTG_FS_IRQn 1 */
-}
-
 /* USER CODE BEGIN 1 */
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
 
+}
 /* USER CODE END 1 */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

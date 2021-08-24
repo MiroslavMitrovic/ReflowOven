@@ -544,8 +544,8 @@ void Draw_Reflow_Curve(){
 }
 
 void setReflowParameters(){
-	ReflowParameters.KP = 10; //203
-	ReflowParameters.Ki = 10; //5.2
+	ReflowParameters.KP = 200; //203
+	ReflowParameters.Ki = 0; //5.2
 	ReflowParameters.KD = 0;
 	ReflowParameters.firstHeatUpRate = 1.2;
 	ReflowParameters.SoakTempeture = 100;
