@@ -1,2 +1,2 @@
-# ReflowOven
-Reflow Oven powered by STM32
+# Custom Bootloader for Reflow Oven
+Custom Bootloader for STM32F407VGT6
